@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Dealkeun | Pusat Bantuan</title>
+    <meta name="description" content="Dealkeun - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="Dealkeun, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Dealkeun">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="../assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="../assets/img/logo-autodeal.svg"/>
+            </span>
+            <span class="d-sm-inline">Autodeal.id</span>
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+          <div class="nav-menu menuMobile">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="../assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+
+            <div class="mobileLogin_modal login_no">
+              <!-- Profile Login -->
+              <div class="profileMobile">
+                <img src="../assets/icons/person.svg" class="photoProfile_default"/>
+                <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
+                <!-- ganti foto user setelah login -->
+                <div class="nameProfile name_default">
+                  <span>Halo,</span>
+                  <span>Kamu belum login 😢</span> 
+                </div>
+                <div class="nameProfile name_real">
+                  <span>Halo,</span>
+                  <span>John Doe</span> 
+                </div>
+              </div>
+
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Setting -->
+              <div class="row settingProfile">
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Bantuan</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Theme switcher - Mobile -->
+            <div class="form-check form-switch mode-switch modeSwitch-mobile order-lg-3" data-bs-toggle="mode">
+              <span>Mode tema</span>
+              <div class="toggleSwitch">
+                <input class="form-check-input" type="checkbox" id="theme-mode">
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-brightness-low"></i>
+                </label>
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-moon-stars" style="font-size: 11px;"></i>
+                </label>
+              </div>
+            </div>
+
+            <ul class="kategoriMobile">
+              <li><a href="#"><img src="../assets/icons/category/properti.png"/>Properti</a></li>
+              <li><a href="#"><img src="../assets/icons/category/mobil.png"/>Mobil</a></li>
+              <li><a href="#"><img src="../assets/icons/category/motor.png"/>Motor</a></li>
+              <li><a href="#"><img src="../assets/icons/category/gadget.png"/>Gadget</a></li>
+              <li><a href="#"><img src="../assets/icons/category/elektronik.png"/>Elektronik</a></li>
+              <li><a href="#"><img src="../assets/icons/category/olahraga.png"/>Olahraga</a></li>
+              <li><a href="#"><img src="../assets/icons/category/peliharaan.png"/>Peliharaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/hobi.png"/>Hobi</a></li>
+              <li><a href="#"><img src="../assets/icons/category/fashion.png"/>Fashion</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perabotan.png"/>Perabotan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/pekerjaan.png"/>Pekerjaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/bayipedia.png"/>Bayipedia</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perkantoran.png"/>Perkantoran</a></li>
+            </ul>
+          </div>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <section class="searchBox bg-light">
+              <div class="container">
+                <div class="loc_frame">
+                  <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                  <i class="bi bi-map"></i>
+                  <select class="locationBox" name="state">
+                    <option value="" disabled selected>Indonesia</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                    <option value="Sumatra">Sumatra</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                  </select>
+                </div>
+                <div class="search_frame">
+                  <input type="text" id="input_search" placeholder="Cari disini ..." autocomplete="on">
+                  <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+                <div class="result_box">
+                </div>
+              </div>
+            </section>
+          </nav>
+
+          <!-- Search + Account + Cart -->
+          <div class="nav align-items-center order-lg-2 ms-n1 me-sm-0 akunMobile">
+            <!-- profile before login -->
+            <!-- <a class="nav-link fs-7 p-2 mx-sm-1 d-sm-flex" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+              <i class="bi bi-person"></i>
+              Login / Daftar
+            </a> -->
+
+            <!-- profile after login -->
+            <div class="profileDesktop">
+              
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
+                </button>
+                <div class="dropdown-menu my-1">
+                  <div class="nameProfile name_real">
+                    <span>Halo,</span>
+                    <span>John Doe</span> 
+                  </div>
+                  
+                  <!-- Theme switcher - Desktop -->
+                  <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
+                    <!-- <div class="toggleSwitch"> -->
+                      <input class="form-check-input" type="checkbox" id="theme-mode">
+                      <label>Mode tema</label>
+                    <!-- </div> -->
+                  </div>
+                  <div class="hr_custom"></div>
+                  <!-- Setting -->
+                  <div class="row settingProfile">
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Profile</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span>Pengaturan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Bantuan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Keluar</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-menu">|</div>
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- slider menu -->
+      <div class="menuSlider">
+
+        <section class="position-relative">
+          <!-- Swiper slider -->
+          <div class="container position-relative z-2">
+            <div class="swiper" data-swiper-options='{
+              "slidesPerView": "auto",
+              "spaceBetween": 8,
+              "loop": false,
+              "navigation": {
+                "prevEl": ".prev-gallery",
+                "nextEl": ".next-gallery"
+              }
+            }'>
+              <div class="swiper-wrapper align-items-end swiperMenu">
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/properti.png" class="iconKategori-menu"/>
+                    Properti
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/mobil.png" class="iconKategori-menu"/>
+                    Mobil
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/motor.png" class="iconKategori-menu"/>
+                    Motor
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/gadget.png" class="iconKategori-menu"/>
+                    Gadget
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/elektronik.png" class="iconKategori-menu"/>
+                    Elektronik
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/olahraga.png" class="iconKategori-menu"/>
+                    Olahraga
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/peliharaan.png" class="iconKategori-menu"/>
+                    Peliharaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/hobi.png" class="iconKategori-menu"/>
+                    Hobi
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/fashion.png" class="iconKategori-menu"/>
+                    Fashion
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perabotan.png" class="iconKategori-menu"/>
+                    Perabotan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/pekerjaan.png" class="iconKategori-menu"/>
+                    Pekerjaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/bayipedia.png" class="iconKategori-menu"/>
+                    Bayipedia
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perkantoran.png" class="iconKategori-menu"/>
+                    Perkantoran
+                  </a>
+                </div>
+  
+              </div>
+            </div>
+            <!-- Swiper controls (Prev/next buttons) visible on screens > 576px -->
+            <div class="d-none d-sm-flex navMenu bg-light">
+              <button class="prev-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Prev">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="next-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+      <!-- Page container -->
+      <div class="container py-5 mt-5 mb-lg-4 mb-xl-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bc_breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Pusat Bantuan</li>
+          </ol>
+        </nav>
+
+        <!-- Page title -->
+        <div class="row mt-n1 cardSub">
+          <div class="col-lg-12 pt-lg-3 cardSub_bg">
+            <h4 class="pb-2 pb-sm-3">
+              <div class="center">
+                <span>Pusat Bantuan</span>
+              </div>
+            </h4>
+          </div>
+        </div>
+        <div class="row pb-2 pb-sm-4">
+  
+          <!-- Sidebar (offcanvas on sreens < 992px) -->
+          <aside class="col-lg-3">
+            <div class="offcanvas-lg offcanvas-start pusBan01" id="shopSidebar">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Pusat Bantuan</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#shopSidebar" aria-label="Close"></button>
+              </div>
+  
+              <!-- Body -->
+              <div class="offcanvas-body pt-2 pt-lg-0 pe-lg-4">
+  
+                <!-- Categories (accordion with checkboxes) -->
+                <div class="accordion accordion-alt pb-2 mb-4" id="shopCategories">
+                   <!-- list 01 -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#listPusban_01" aria-expanded="true" aria-controls="listPusban_01">
+                        <span class="fs-base">Informasi Hukum dan Privasi</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="listPusban_01" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <ul>
+                          <li><a href="#pb_01" class="pusBan_link active" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_01">Syarat & Ketentuan</a></li>
+            <section class="section">
+                <ul class="article-list">
+                    <li  class="">
+                      <a href="#pb_01a" class="pusBan_link active" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_01a">Larangan Iklan </a>
+                    </li>
+                    <li>
+                      <a href="#pb_01b" class="pusBan_link active" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_01b">Ketentuan Fitur Berbayar</a>
+                    </li>
+                    <li>
+                      <a href="#pb_01c" class="pusBan_link active" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_01c">Prosedur Pemberitahuan dan Penghapusan Materi</a>
+                    </li>
+                    <li>
+                      <a href="#pb_01d" class="pusBan_link active" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_01d">Ketentuan Umum</a>
+                    </li>
+                  </ul>
+            </section>
+                          <li><a href="#pb_02" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_02">Kebijakan Privasi</a></li>
+                          <li><a href="#pb_03" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_03">Hak Subyek Data</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- list 02 -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#listPusban_02" aria-expanded="false" aria-controls="listPusban_02">
+                        <span class="fs-base">Akun & Profil</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse" id="listPusban_02" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <ul>
+                          <li><a href="#pb_04" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_04">Membuat Akun</a></li>
+                          <li><a href="#pb_05" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_05">Pengaturan Akun</a></li>
+                          <li><a href="#pb_06" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_06">Kendala Akun</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- list 03 -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#listPusban_03" aria-expanded="false" aria-controls="listPusban_03">
+                        <span class="fs-base">Pasang & Kelola Iklan</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse" id="listPusban_03" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <ul>
+                          <li><a href="#pb_04" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_04">Pasang, Edit & Hapus Iklan</a></li>
+                          <li><a href="#pb_05" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_05">Iklan Saya</a></li>
+                          <li><a href="#pb_06" class="pusBan_link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="pb_06">Tidak Menemukan Iklan</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+  
+  
+          <!-- Pusat Bantuan Detail -->
+          <div class="col-lg-9 pusBan02">
+            <!-- Sidebar toggle button -->
+            <button class="d-lg-none btn btn-sm fs-sm rounded-0 btnpusBan" type="button" data-bs-toggle="offcanvas" data-bs-target="#shopSidebar">
+              <i class="bi bi-list-ul"></i></i>Pusat bantuan lainnya
+            </button>
+
+            <!-- pb_01a -->
+            <div class="collapse pusBan_detail show" id="pb_01a">
+              <h4>Larangan Iklan</h4>
+              <h3 class="h5">Larangan Iklan</h3>
+              <p>Berikut ini adalah daftar barang dan jasa yang dilarang untuk dijual di situs DKD.com dan situs-situs lainnya serta aplikasi mobile dari Layanan (“Situs”). Daftar barang dan jasa ini adalah bagian yang tak terpisahkan dari Syarat dan Ketentuan Situs. Oleh karena itu apabila pengguna melakukan penjualan atas barang dan jasa yang dilarang sebagaimana dinyatakan dalam halaman ini, berarti juga telah melanggar Syarat dan Ketentuan Layanan Situs. Berikut ketentuan yang dilarang untuk diiklankan:</p>
+<p><span style="font-weight: 400;">Dengan hal ini, kami telah mempertimbangkan pedoman pemerintah, dan melarang produk-produk tersebut untuk tayang pada Situs.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Kami akan mencoba untuk mencegah daftar produk tersebut agar tidak ditayangkan, dan kami menyambut laporan pengguna tentang daftar produk ini sehingga kami dapat menghapus yang lolos dari Situs. Keputusan ini sejalan dengan syarat dan ketentuan Situs.</span></p>
+<p>&nbsp;</p>
+<p><strong>Umum</strong></p>
+<p><span style="font-weight: 400;">Pada pokoknya anda dilarang untuk mengiklankan:</span></p>
+<p><span style="font-weight: 400;">Barang atau jasa yang tergolong berbahaya, melanggar hukum, mengancam, melecehkan, menghina, memfitnah, mengintimidasi, menginvasi privasi orang lain atau hak-hak lainnya, meremehkan, berkaitan atau dengan cara apapun atau melanggar hukum dengan cara apapun</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang merugikan pihak ketiga dalam bentuk apapun</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Benda-benda atau jasa yang tergolong sensitif dan salah secara moral</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang hasil kejahatan.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Produk elektronik yang belum dirilis / diluncurkan secara resmi di Indonesia oleh pemilik sah merek tersebut dan atau belum terdaftar di Ditjen Postel Kominfo atau belum terdaftar TKDN Kemenperin baik penjualan secara langsung ataupun secara preorder.</span></li>
+</ol>
+<p><strong>Iklan yang Melanggar Peraturan Pemasangan Iklan</strong></p>
+<p><span style="font-weight: 400;">Demi menjaga konten pada Situs agar tetap berkualitas, kami membatasi dengan ketentuan sebagai berikut:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang menduplikasi iklan lain yang sudah aktif</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang mengarahkan ke website competitor</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan dengan kategori yang tidak sesuai</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan dengan foto terdapat kontak pribadi, foto buram, foto produk terbalik</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan dengan penulisan harga DP/TDP/Angsuran/Cicilan pada iklan &amp; penulisan harga yang tidak sesuai pada kolom harga</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan dengan beberapa produk di deskripsi dan judul yang tidak sesuai dengan produk/jasa yang dijual.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Menduplikasi iklan dengan iklan yang di nonaktikan sebelum 2 x 24 jam</span></li>
+</ol>
+<p><strong>Iklan dengan Materi Dewasa</strong></p>
+<p><span style="font-weight: 400;">Pemasang Iklan tidak diizinkan menempatkan iklan yang mengandung pornografi, bersifat dewasa, atau materi yang hanya bisa dikonsumsi oleh orang dewasa, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Benda atau gambar yang mengandung pornografi secara terang-terangan, terutama yang menampilkan jenis kelamin pria/wanita dan/atau pornografi yang melibatkan orang-orang di bawah usia dewasa</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Benda-benda terkait dengan kekerasan seksual</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Alat bantu seks,&nbsp;</span><em><span style="font-weight: 400;">vibrator</span></em><span style="font-weight: 400;">, obat seks, obat kuat,&nbsp;</span><em><span style="font-weight: 400;">enlargement pill&nbsp;</span></em><span style="font-weight: 400;">(obat pembesar kelamin), perangsang, pemerah puting, pemutih selangkangan, boneka seks.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa lady escort/&nbsp;ladies club, ladies night/wanita sewaan.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa seks komersial.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan-iklan yang cabul, atau bersifat atau bahkan secara implisit maupun eksplisit merupakan pornografi, atau bersifat atau bahkan secara implisit maupun eksplisit merupakan materi pedofilia.</span></li>
+</ol>
+<p><strong>Iklan Dengan Materi yang Menyudutkan Seseorang, Kelompok, atau Organisasi</strong></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">DKD sangat meyakini kebebasan berekspresi, tetapi juga mengakui kebutuhan untuk melindungi kualitas iklan DKD bagi para penggunanya. Anda tidak diizinkan untuk mengunggah materi yang bersifat melecehkan atau intimidasi, atau yang menghasut kebencian atau mempromosikan kekerasan terhadap individu atau kelompok berdasarkan ras atau asal etnis, agama, kecacatan, jenis kelamin, usia, status veteran, atau orientasi seksual/identitas gender ataupun menghasut atau untuk mendukung bahaya terhadap individu atau kelompok, antara lain:</span></p>
+<ol>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Benda atau gambar atau jasa yang yang melecehkan, mendegradasi, atau mengandung muatan kebencian terhadap individu atau kelompok individu atas dasar agama, jenis kelamin, orientasi seksual, ras, etnis, usia, atau cacat tubuh</span></li>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang menganjurkan/membenarkan kekerasan atau membuat ancaman bahaya terhadap individu atau kelompok</span></li>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang menghasut atau mempromosikan kebencian terhadap kelompok atau individu</span></li>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang mendorong orang lain untuk percaya bahwa suatu kelompok atau individu adalah tidak manusiawi atau lebih rendah</span></li>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang menyerang seseorang atau kelompok atas dasar orientasi seksual atau identitas gender.</span><span style="font-weight: 400;"></span></li>
+</ol>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Namun, iklan yang mengandung pendidikan, dokumenter, sejarah, ilmiah, atau materi artistik yang terkait dengan pendidikan diizinkan untuk diiklankan.</span></p>
+<p class="wysiwyg-text-align-justify">&nbsp;</p>
+<p><strong>Iklan yang Merupakan Pelanggaran Hak Kekayaan Intelektual ataupun Hak Pihak Ketiga</strong></p>
+<p><span style="font-weight: 400;">Termasuk dalam kategori ini adalah iklan-iklan seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang-barang yang melanggar hak kekayaan intelektual pihak ketiga, termasuk namun tidak terbatas pada:</span></li>
+<ul>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Blackmarket item</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Barang KW</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Barang imitasi</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Super premium</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Grade AAA/+++</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Barang bajakan</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Copy dari original</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Barang replica</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Branded wanna be</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Look alike</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Musik, film, software, dan barang-barang lain yang melanggar hak kekayaan intelektual</span></li>
+</ul>
+<li><span style="font-weight: 400;">Akun digital termasuk Internet messaging, email,&nbsp;</span><em><span style="font-weight: 400;">password&nbsp;</span></em><span style="font-weight: 400;">(kode identifikasi pengguna), PIN</span></li>
+<li class="wysiwyg-text-align-justify" style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang mencakup informasi pribadi atau identifikasi tentang orang lain tanpa persetujuan eksplisit orang itu.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan produk yang tidak diizinkan oleh Produsen atau Distributor resmi untuk diperdagangkan melalui Situs internet.</span></li>
+</ol>
+<p><strong>Iklan Narkoba, Obat-Obatan, Makanan, Minuman Tertentu</strong></p>
+<p><span style="font-weight: 400;">Termasuk dalam kategori ini adalah iklan-iklan, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Obat-obatan terlarang sebagaimana diatur dalam Undang-Undang Nomor 35 Tahun 2009 Tentang Narkotika, termasuk Psikotropika dan obat-obatan, terutama obat-obatan, dan zat lain yang dimaksudkan untuk digunakan sebagai pengganti, terlepas dari apakah kepemilikan dan pemasaran zat dan bahan kimia tersebut dilarang oleh hukum atau tidak.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Obat-obatan yang berkhasiat untuk&nbsp;&nbsp;&nbsp;<strong>menyembuhkan&nbsp;</strong>&nbsp;penyakit kanker, tuberkolosis, poliomelitis,penyakit kelamin, impotensi, tiphus, kolera, tekanan darah tinggi, diabetes,lever dan penyakit lain yang ditetapkan oleh Keputusan Menteri Kesehatan RI&nbsp;&nbsp;386/MENKES/SK/IV/1994 tentang pedoman periklanan: obat bebas, obat tradisional, alat kesehatan, kosmetika, perbekalan kesehatan rumah tangga dan makanan-minuman.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Obat-obat yang memerlukan resep atau tindakan langsung oleh dokter, obat bius dan sejenisnya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Obat Keras</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Obat-obatan (termasuk obat-obatan tradisional) yang tidak mempunyai izin edar dan/atau yang materi iklannya belum/tidak disetujui oleh pihak-pihak terkait</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Makanan, minuman dan obat-obatan yang belum terdaftar/dilarang oleh BPOM.</span></li>
+</ol>
+<p><strong>Iklan Produk Alkohol dan Tembakau</strong></p>
+<p><span style="font-weight: 400;">Termasuk dalam kategori ini adalah iklan-iklan, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Rokok, cerutu, tembakau, dan produk turunannya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Rokok elektrik termasuk aksesori, dan cairannya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Shisha termasuk aksesori, dan cairannya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Alkohol dan minuman keras lainnya</span></li>
+</ol>
+<p><strong>Iklan Jasa&nbsp;</strong><strong><em>Hacking</em></strong><strong>&nbsp;dan&nbsp;</strong><strong><em>Cracking</em></strong></p>
+<p><span style="font-weight: 400;">DKD melarang iklan yang bertujuan untuk mempromosikan segala bentuk&nbsp; &nbsp;</span><em><span style="font-weight: 400;">hacking&nbsp;</span></em><span style="font-weight: 400;">&nbsp;atau&nbsp;&nbsp;</span><em><span style="font-weight: 400;">cracking.&nbsp;</span></em><span style="font-weight: 400;">&nbsp;Termasuk namun tidak terbatas pada memberikan petunjuk atau peralatan yang dapat mengubah dengan atau menyediakan akses ilegal ke software, server, atau situs web, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa jailbreak/bypass/unlocked</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa instalasi Operating System yang tidak original/tersertifikasi</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa injeksi Pulsa/Paket Data Internet</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa/alat sadap dan intersepsi</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Lisensi perangkat lunak NFR (Not for Resale), versi uji, freeware, shareware, abandonware</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak yang dirancang untuk operasi melanggar hukum atau moralitas, termasuk:</span><span style="font-weight: 400;"></span>
+<ul style="font-weight: 400;">
+<li style="list-style-type: none;">
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak ataupun perangkat keras yang mengandung virus atau komponen berbahaya lainnya;</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak ataupun perangkat keras yang memungkinkan anda untuk mengambil informasi tentang pengguna komputer tanpa sepengetahuannya;</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak ataupun perangkat keras untuk menghilangkan kunci dan password dari komputer desktop dan laptop, hard drive dan media penyimpanan lainnya serta informasi, instruksi dan layanan yang terkait dengan penghapusan atau memasang kunci tersebut</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak ataupun perangkat keras yang memungkinkan anda untuk mengambil e-mail dari situs web atau memungkinkan seseorang untuk mengirim pesan secara massal ke pengguna jasa internet,&nbsp;<em>instant messaging&nbsp;</em>, dan lain-lain</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Perangkat lunak ataupun Perangkat keras yang bertujuan untuk merusak atau membatasi fungsi dari Perangkat lunak ataupun Perangkat keras suatu komputer atau peralatan telekomunikasi atau elektronik lainnya</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>K<span style="font-weight: 400;">unci serial yang dijual tanpa menyediakan&nbsp;&nbsp;&nbsp;</span><em><span style="font-weight: 400;">software</span></em></li>
+<li style="font-weight: 400;" aria-level="1">P<span style="font-weight: 400;">etunjuk, link dan FTP server, khususnya, mengandung informasi yang memungkinkan atau memfasilitasi seseorang untuk menciptakan atau memiliki bahan berbahaya, yang melanggar hukum, dan/atau merupakan kepemilikan yang dilarang</span></li>
+<li style="font-weight: 400;" aria-level="1">J<span style="font-weight: 400;">asa pengrusakan&nbsp;</span><em><span style="font-weight: 400;">website</span></em></li>
+<li style="font-weight: 400;" aria-level="1">J<span style="font-weight: 400;">asa&nbsp;</span><em><span style="font-weight: 400;">hacking&nbsp;</span></em><span style="font-weight: 400;">(peretas)</span></li>
+<li style="font-weight: 400;" aria-level="1">J<span style="font-weight: 400;">asa sadap dan intersepsi</span></li>
+<li style="font-weight: 400;" aria-level="1">S<span style="font-weight: 400;">oftware, benda-benda, ataupun jasa yang dirancang untuk operasi melanggar hukum atau yang melanggar moralitas.</span></li>
+</ol>
+<p><strong>IKLAN YANG MENAWARKAN PROGRAM KOMPENSASI ("</strong><strong><em>PAY-TO</em></strong><strong>”)</strong></p>
+<p><span style="font-weight: 400;">Istilah "</span><em><span style="font-weight: 400;">pay-to&nbsp;</span></em><span style="font-weight: 400;">" mengacu pada situs yang menjanjikan pembayaran atau insentif kepada pengguna yang mengklik iklan, </span><em><span style="font-weight: 400;">surfing web&nbsp;</span></em><span style="font-weight: 400;">, membaca email, atau melakukan tugas-tugas lain yang sejenis, mengarahkan lalu lintas ke luar layanan DKD atau suatu pembayaran di luar layanan DKD, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang merupakan atau mengandung kode link&nbsp;</span><em><span style="font-weight: 400;">referral&nbsp;</span></em><span style="font-weight: 400;">, atau&nbsp;&nbsp;</span><em><span style="font-weight: 400;">&nbsp;junk mail&nbsp;</span></em><span style="font-weight: 400;">, atau&nbsp;&nbsp;&nbsp;</span><em><span style="font-weight: 400;">spam&nbsp;</span></em><span style="font-weight: 400;">atau surat berantai</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan mengenai suatu barang dan/atau jasa yang palsu, menipu, menyesatkan /mis informasi, atau tergolong merupakan penawaran "umpan dan klik&nbsp;</span><em><span style="font-weight: 400;">(Bait and click&nbsp;</span></em><span style="font-weight: 400;">)"</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan&nbsp;<em>“Pay per sale”,&nbsp;”Pay-To-Click”, ”Pay-To-Surf”, ”Auto-Surf”, ”Pay-To-Search”.</em></span></li>
+</ol>
+<p><strong>Iklan yang Menggunakan Merek Milik Kami</strong></p>
+<p><span style="font-weight: 400;">Penggunaan fitur merek milik kami seperti logo,&nbsp;</span><em><span style="font-weight: 400;">screenshot</span></em><span style="font-weight: 400;">, atau fitur khas lain tanpa izin kami tidak diperbolehkan, seperti misalnya:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang meniru orang atau badan usaha atau badan hukum, termasuk, namun tidak terbatas pada, setiap karyawan kami, atau pemerintah atau afiliasi yang salah dengan seseorang atau badan usaha atau badan hukum.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Untuk informasi lebih lanjut tentang penggunaan merek dagang dan fitur merek, silahkan menghubungi kami melalui form hubungi kami.</span></p>
+<p>&nbsp;</p>
+<p><strong>Iklan dengan Materi Kekerasan</strong></p>
+<p><span style="font-weight: 400;">DKD tidak mengizinkan iklan yang berisi gambar grafis atau berdarah seperti pertumpahan darah, dan kecelakaan mengerikan atau aneh, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Organ tubuh manusia, darah</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang ataupun jasa terkait dengan penyiksaan baik hewan maupun manusia.</span></li>
+</ol>
+<p><strong>Iklan Senjata, Militer dan Peledak&nbsp;</strong></p>
+<p><span style="font-weight: 400;">DKD tidak mengizinkan Anda untuk menjual, memfasilitasi atau mendukung penjualan senjata dan aksesoris senjata (kecuali aksesoris airsoftgun &amp; aksesoris paintball) termasuk namun tidak terbatas pada penjualan amunisi, bagian senjata, pistol, senapan, senjata udara, dan senjata bius. Kebijakan ini juga melarang iklan yang menjual bahan peledak, termasuk kembang api serta produk-produk yang berhubungan dengan militer, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Senjata (termasuk senjata api, senapan angin dan benda yang mirip/sejenisnya)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Tanda kepangkatan.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Atribut instansi pemerintah (Polri,TNI,Dishub,sejenisnya)</span></li>
+</ol>
+<p><strong>Iklan yang Memungkinkan Perilaku Tidak Jujur</strong></p>
+<p><span style="font-weight: 400;">Kami sangat menghargai kejujuran dan keadilan, sehingga kami tidak mengizinkan iklan dengan materi yang dapat membantu pengguna untuk melakukan kecurangan atau menyesatkan orang lain, seperti misalnya:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan yang bertujuan untuk penipuan dan/atau mendukung penipuan</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Mendorong pencucian uang</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa pemalsuan dokumen, jual ijazah, jual sertifikat</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa pembuatan skripsi, tesis, disertasi termasuk namun tidak terbatas pada skripsi, tesis, disertasi itu sendiri</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Skema piramida atau pemasaran afiliasi atau money game</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">STNK dan atau BPKB yang dijual tidak bersamaan dengan kendaraan yang dimaksud dalam STNK dan atau BPKB tersebut</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Penipuan Jasa dan lowongan kerja</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Tiket transportasi yang sudah mempunyai nama di tiket tersebut.</span></li>
+</ol>
+<p><strong>Lain-Lain</strong></p>
+<p><span style="font-weight: 400;">Selain hal-hal di atas anda juga dilarang untuk mengiklankan:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Manusia (</span><em><span style="font-weight: 400;">human trafficking&nbsp;</span></em><span style="font-weight: 400;">)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">ASI (Air Susu Ibu)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Penawaran Jasa Pijat</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang baru yang tergolong wajib memiliki SNI, namun tidak memiliki SNI</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang baru yang wajib memiliki petunjuk penggunaan dan kartu jaminan purna jual, namun tidak memilikinya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang baru yang wajib mencantumkan label Bahasa Indonesia pada barang tersebut, namun tidak mencantumkannya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Barang yang diimpor dalam keadaan bekas untuk diperjual belikan di Indonesia</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Tanaman &amp; binatang yang dilindungi oleh Negara berdasarkan Undang Undang&nbsp;NOMOR P.26/MENLHK/SETJEN/KUM.1/7/2018&nbsp;Tentang Konservasi Sumberdaya Alam Hayati dan Ekosistemnya. Termasuk bagian tubuh dari tanaman &amp; binatang tersebut, seperti taring, cakar, kulit, hasil awetan, dll.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Benda-benda atau jasa yang berhubungan dengan perjudian, lotere dan taruhan</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Produk multi-level marketing, money games, cepat kaya dan sejenisnya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Saham, obligasi, surat berharga lainnya, utang, dana investasi, pertukaran valuta asing, produk asuransi dan instrumen keuangan lain yang ditawarkan sebagai bentuk investasi dan/atau penempatan dana</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Kartu kredit, kredit tanpa agunan dan sejenisnya</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Lampu strobo/lightbar</span></li>
+<li style="font-weight: 400;" aria-level="1"><em><span style="font-weight: 400;">Repeater&nbsp;</span></em><span style="font-weight: 400;">/penguat sinyal</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Bahan kimia, beracun dan berbahaya, seperti misalnya: sulfuric acid, carbide (karbit)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa bantuan hukum</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa&nbsp;&nbsp;&nbsp;</span><em><span style="font-weight: 400;">bodyguard&nbsp;</span></em><span style="font-weight: 400;">dan/atau tukang pukul</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Produk atau jasa yang berkaitan dengan mistis/takhayul</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Rumah bekas yang bersubsidi pemerintah</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan berkaitan dengan pekerjaan TKI (Tenaga Kerja Indonesia) dan TKW (Tenaga Kerja Wanita)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Iklan pencarian kerja dan penyedia kerja untuk anak dibawah umur 18 tahun</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa pernikahan siri</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Produk dan Jasa suntik putih.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa pembuatan atau pengurusan SIM, KTP, NPWP, Slip Gaji, Ijazah, Akta Kelahiran, Akta Kematian &amp; KK (Kartu Keluarga).</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Jasa pendaftaran&nbsp;layanan transportasi dan jasa online termasuk tetapi tidak terbatas pada Ojek Online, taxi online, mobil online, massage online, make-up online, automotif online, dan lainnya yang dirasa DKD Indonesia termasuk dalam kategori tersebut</span></li>
+</ol>
+<p><strong>Keterangan</strong></p>
+<p><span style="font-weight: 400;">DKD Indonesia berdasarkan pertimbangannya sendiri mempunyai hak untuk memutuskan iklan yang ditayangkan dan mencabut iklan yang tidak sesuai dengan peraturan pemasangan iklan, maupun dengan mempertimbangkan berbagai alasan tertentu. Peraturan ini akan selalu diperbarui dan dapat berubah sewaktu-waktu.</span></p>
+<p>&nbsp;</p>
+</div>
+
+<!-- pb_01b -->
+<div class="collapse pusBan_detail show" id="pb_01b">
+<p class="wysiwyg-text-align-justify"><strong>KETENTUAN FITUR BERBAYAR</strong></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Syarat dan ketentuan yang ada di dalam halaman ini (</span><strong>Ketentuan Fitur Berbayar</strong><span style="font-weight: 400;">) mengikat Anda sebagai pengguna situs www.DKD.com, aplikasi DKD Indonesia, dan layanan lain yang terasosiasi dengan DKD Indonesia, baik sebagai pengguna terdaftar ataupun pihak yang sekedar berkunjung melihat Layanan, pemasang iklan, maupun calon pembeli.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Syarat dan Ketentuan Fitur Berbayar ini merupakan bagian yang tak terpisahkan dari </span><a href="https://help.DKD.com/hc/id/articles/206444513-Ketentuan-Umum"><strong>Ketentuan Umum</strong></a><span style="font-weight: 400;"> (yang termasuk namun tidak terbatas kepada </span><a href="https://help.DKD.com/hc/id/articles/360029106211-Kebijakan-Privasi"><strong>Kebijakan Privasi</strong></a><span style="font-weight: 400;"> dan </span><a href="https://help.DKD.com/hc/id/articles/206444533-Larangan-Iklan">Larangan Iklan</a><span style="font-weight: 400;">).</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Dengan mengakses atau menggunakan Fitur Berbayar yang disediakan oleh DKD Indonesia, maka Anda dianggap telah menerima, memahami, menyetujui, serta sepakat untuk mematuhi semua isi dalam Ketentuan Fitur Berbayar ini. Ketentuan Fitur Berbayar dapat diubah dan/atau diperbaharui sewaktu-waktu oleh DKD Indonesia tanpa ada pemberitahuan terlebih dahulu. Apabila Anda tidak setuju atas Ketentuan Fitur Berbayar ini, DKD Indonesia mempersilahkan Anda untuk tidak melanjutkan penggunaan Fitur Berbayar yang disediakan oleh DKD Indonesia.</span></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>*Definisi: </strong><span style="font-weight: 400;">Fitur berbayar adalah sejumlah fitur yang disediakan oleh DKD Indonesia yang saat ini dapat digunakan untuk melakukan promosi iklan maupun untuk fungsi berbayar lainnya.</span></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><em><span style="font-weight: 400;">(Setiap kata yang tidak didefinisikan di atas akan mempunyai arti yang sama dengan yang dimaksud dalam Ketentuan Umum).</span></em></p>
+<p class="wysiwyg-text-align-justify"> </p>
+<p class="wysiwyg-text-align-justify"><strong>Pelaksanaan Aktivitas Fitur Berbayar</strong></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Apabila Anda membatalkan iklan Anda sebelum iklan ditayangkan, merubah konten iklan atau menghapus iklan yang telah ditayangkan karena sebab apapun, maka tindakan tersebut juga akan menghapus Fitur Berbayar yang melekat pada iklan tersebut. Kondisi yang sama berlaku pada kegiatan menonaktifkan akun, dimana iklan-iklan pada akun DKD yang dinonaktifkan akan otomatis berstatus nonaktif, dan akan menghapus fitur berbayar yang melekat pada iklan-iklan di akun DKD tersebut. Anda tidak dapat meminta pengembalian atas Fitur Berbayar karna tidak digunakan hingga menyebabkan masa aktifnya berakhir ataupun yang telah digunakan akibat pembatalan atau penghapusan iklan tersebut. Dalam hal ini DKD Indonesia tidak memiliki tanggung jawab lebih lanjut untuk menampilkan iklan yang telah dihapus.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">DKD Indonesia tidak bertanggung jawab atas keberhasilan maupun kegagalan dari setiap promosi/pembelian/penjualan/pencarian konten yang ditayangkan dengan menggunakan Fitur Berbayar pada Layanan DKD Indonesia.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Setiap biaya yang Anda keluarkan untuk menggunakan Fitur Berbayar tidak dapat dikembalikan, termasuk dalam hal di mana iklan Anda dihapus dari atau tidak diterbitkan pada Layanan kami atau Anda ingin menghentikan akun Anda.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">Anda dilarang untuk menggunakan Fitur Berbayar dengan tujuan untuk melanggar hukum atau melanggar </span><a href="https://help.DKD.com/hc/id/articles/206444513-Ketentuan-Umum"><strong>Syarat dan Ketentuan</strong></a><span style="font-weight: 400;"> atau membatasi atau menghambat pengguna lain untuk menggunakan atau menikmati layanan yang disediakan oleh DKD Indonesia. Anda setuju untuk menggunakan Fitur Berbayar hanya untuk tujuan yang sah dan tidak bertentangan dengan hukum yang berlaku.</span></p>
+<p class="wysiwyg-text-align-justify"><span style="font-weight: 400;">DKD Indonesia atas kebijakannya sendiri, berhak untuk mencegah dan/atau menghentikan pengguna untuk menggunakan akunnya dengan cara apapun apabila pengguna diduga maupun terlibat maupun telah terlibat dalam aktivitas sebagaimana disebutkan pada paragraf sebelumnya, apabila pengguna melakukan aktivitas yang berbahaya bagi pengguna lainnya, atau diduga akan melanggar hak pihak mana pun (termasuk namun tidak terbatas pada DKD Indonesia). DKD Indonesia dapat melarang atau menghapus perilaku, komunikasi atau konten yang dikirimkan pada Layanan yang dianggap melanggar hukum yang berlaku, melanggar Syarat dan Ketentuan Umum dan syarat-syarat serta petunjuk lain yang berlaku terhadap Layanan ini. Dalam hal terjadi pelanggaran terhadap syarat dan ketentuan kami yang mengakibatkan pemblokiran akun Anda, maka seluruh Fitur Berbayar yang ada dalam akun Anda akan terhapus dengan sendirinya.</span></p>
+</div>
+
+<!-- pb_01c -->
+<div class="collapse pusBan_detail show" id="pb_01c">
+
+</div>
+
+
+
+              
+</main>  
+    <!-- Footer-->
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="bg-footer rounded-5 position-relative overflow-hidden w-100 py-4 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;" data-bs-theme="dark">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;">
+            <img src="../assets/img/landing/web-studio/footer-wave.png" alt="Wave">
+          </div>
+          <div class="container position-relative z-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2 footerMobile">
+              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
+                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
+                  <span class="text-primary flex-shrink-0">
+                      <span class="text-primary flex-shrink-0 me-2">
+                        <img src="../assets/img/logo-autodeal.svg"/>
+                      </span>
+                  </span>
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+                </div>
+                <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+                <!-- <div class="input-group input-group-sm rounded-pill">
+                  <input class="form-control" type="text" placeholder="Email address">
+                  <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
+                </div> -->
+              </div>
+              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Kategori Populer</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Properti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Mobil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Motor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Gadget</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Persyaratan Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2">
+                <h6 class="fw-bold">Contact us</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-2 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <a class="btn btn-icon btn-sm btn-secondary btn-ig rounded-circle mx-2" href="https://www.instagram.com/autodeal_indo/" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-tt rounded-circle mx-2" href="https://www.tiktok.com/@autodeal__id?" aria-label="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-yt rounded-circle mx-2" href="https://www.youtube.com/channel/UCpOhjs2rFzPIQICysbDKgTQ" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
+                <span class="text-body-secondary">&copy; 2023</span>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="../assets/js/autodeal.js"></script>
+    
+  </body>
+</html>

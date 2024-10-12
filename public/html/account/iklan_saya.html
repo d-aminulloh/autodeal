@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Autodeal | Iklan Saya</title>
+    <meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Autodeal">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="../assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="../assets/img/logo-autodeal.svg"/>
+            </span>
+            <span class="d-sm-inline">Autodeal.id</span>
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+          <div class="nav-menu menuMobile">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="../assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+
+            <div class="mobileLogin_modal login_yes">
+              <!-- Profile Login -->
+              <div class="profileMobile">
+                <img src="../assets/icons/person.svg" class="photoProfile_default"/>
+                <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
+                <!-- ganti foto user setelah login -->
+                <div class="nameProfile name_default">
+                  <span>Halo,</span>
+                  <span>Kamu belum login 😢</span> 
+                </div>
+                <div class="nameProfile name_real">
+                  <span>Halo,</span>
+                  <span>John Doe</span> 
+                </div>
+              </div>
+
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Setting -->
+              <div class="row settingProfile">
+                <div class="col">
+                  <a href="profil.html">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profil</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="pengaturan.html">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="../tnc_page/pusat_bantuan.html">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Bantuan</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Theme switcher - Mobile -->
+            <div class="form-check form-switch mode-switch modeSwitch-mobile order-lg-3" data-bs-toggle="mode">
+              <span>Mode tema</span>
+              <div class="toggleSwitch">
+                <input class="form-check-input" type="checkbox" id="theme-mode">
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-brightness-low"></i>
+                </label>
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-moon-stars" style="font-size: 11px;"></i>
+                </label>
+              </div>
+            </div>
+
+            <ul class="kategoriMobile">
+              <li><a href="#"><img src="../assets/icons/category/properti.png"/>Properti</a></li>
+              <li><a href="#"><img src="../assets/icons/category/mobil.png"/>Mobil</a></li>
+              <li><a href="#"><img src="../assets/icons/category/motor.png"/>Motor</a></li>
+              <li><a href="#"><img src="../assets/icons/category/gadget.png"/>Gadget</a></li>
+              <li><a href="#"><img src="../assets/icons/category/elektronik.png"/>Elektronik</a></li>
+              <li><a href="#"><img src="../assets/icons/category/olahraga.png"/>Olahraga</a></li>
+              <li><a href="#"><img src="../assets/icons/category/peliharaan.png"/>Peliharaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/hobi.png"/>Hobi</a></li>
+              <li><a href="#"><img src="../assets/icons/category/fashion.png"/>Fashion</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perabotan.png"/>Perabotan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/pekerjaan.png"/>Pekerjaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/bayipedia.png"/>Bayipedia</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perkantoran.png"/>Perkantoran</a></li>
+            </ul>
+          </div>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <section class="searchBox bg-light">
+              <div class="container">
+                <div class="loc_frame">
+                  <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                  <i class="bi bi-map"></i>
+                  <select class="locationBox" name="state">
+                    <option value="" disabled selected>Indonesia</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                    <option value="Sumatra">Sumatra</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                  </select>
+                </div>
+                <div class="search_frame">
+                  <input type="text" id="input_search" placeholder="Cari disini ..." autocomplete="on">
+                  <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+                <div class="result_box">
+                </div>
+              </div>
+            </section>
+          </nav>
+
+          <!-- Search + Account + Cart -->
+          <div class="nav align-items-center order-lg-2 ms-n1 me-sm-0 akunMobile">
+            <!-- profile before login -->
+            <!-- <a class="nav-link fs-7 p-2 mx-sm-1 d-sm-flex" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+              <i class="bi bi-person"></i>
+              Login / Daftar
+            </a> -->
+
+            <!-- profile after login -->
+            <div class="profileDesktop">
+              
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
+                </button>
+                <div class="dropdown-menu my-1">
+                  <div class="nameProfile name_real">
+                    <span>Halo,</span>
+                    <span>John Doe</span> 
+                  </div>
+                  
+                  <!-- Theme switcher - Desktop -->
+                  <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
+                    <!-- <div class="toggleSwitch"> -->
+                      <input class="form-check-input" type="checkbox" id="theme-mode">
+                      <label>Mode tema</label>
+                    <!-- </div> -->
+                  </div>
+                  <div class="hr_custom"></div>
+                  <!-- Setting -->
+                  <div class="row settingProfile">
+                    <div class="col">
+                      <a href="profil.html">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Profil</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="pengaturan.html">
+                        <i class="bi bi-gear"></i>
+                        <span>Pengaturan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Bantuan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Keluar</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-menu">|</div>
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- slider menu -->
+      <div class="menuSlider">
+
+        <section class="position-relative">
+          <!-- Swiper slider -->
+          <div class="container position-relative z-2">
+            <div class="swiper" data-swiper-options='{
+              "slidesPerView": "auto",
+              "spaceBetween": 8,
+              "loop": false,
+              "navigation": {
+                "prevEl": ".prev-gallery",
+                "nextEl": ".next-gallery"
+              }
+            }'>
+              <div class="swiper-wrapper align-items-end swiperMenu">
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/properti.png" class="iconKategori-menu"/>
+                    Properti
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/mobil.png" class="iconKategori-menu"/>
+                    Mobil
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/motor.png" class="iconKategori-menu"/>
+                    Motor
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/gadget.png" class="iconKategori-menu"/>
+                    Gadget
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/elektronik.png" class="iconKategori-menu"/>
+                    Elektronik
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/olahraga.png" class="iconKategori-menu"/>
+                    Olahraga
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/peliharaan.png" class="iconKategori-menu"/>
+                    Peliharaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/hobi.png" class="iconKategori-menu"/>
+                    Hobi
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/fashion.png" class="iconKategori-menu"/>
+                    Fashion
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perabotan.png" class="iconKategori-menu"/>
+                    Perabotan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/pekerjaan.png" class="iconKategori-menu"/>
+                    Pekerjaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/bayipedia.png" class="iconKategori-menu"/>
+                    Bayipedia
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perkantoran.png" class="iconKategori-menu"/>
+                    Perkantoran
+                  </a>
+                </div>
+  
+              </div>
+            </div>
+            <!-- Swiper controls (Prev/next buttons) visible on screens > 576px -->
+            <div class="d-none d-sm-flex navMenu bg-light">
+              <button class="prev-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Prev">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="next-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+      <!-- Page container -->
+      <div class="container py-5 mt-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bc_breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Iklan Saya</li>
+          </ol>
+        </nav>
+
+        <div class="row pt-sm-2 pt-lg-0">
+
+          <!-- Sidebar (offcanvas on sreens < 992px) -->
+          <aside class="col-lg-3 mt-n3">
+            <div class=" top-80">
+              <div class="d-none d-lg-block" style="padding-top: 40px;"></div>
+              <div class="offcanvas-lg offcanvas-start" id="sidebarAccount">
+                <button class="btn-close position-absolute top-0 end-0 mt-3 me-3 d-lg-none" type="button" data-bs-dismiss="offcanvas" data-bs-target="#sidebarAccount" aria-label="Close"></button>
+                <div class="offcanvas-body">
+                  <nav class="nav flex-column mb-3">
+                    <h4 class="fs-xs fw-medium text-body-secondary text-uppercase pb-1 mb-2">Akun</h4>
+                    <a class="nav-link fw-semibold py-2 px-0" href="profil.html">
+                      <i class="bi bi-person-circle fs-6 opacity-60 me-2"></i>
+                      Profil
+                      <i class="bi bi-chevron-right pos-absolute right-10"></i>
+                    </a>
+                    <a class="nav-link fw-semibold py-2 px-0" href="pengaturan.html">
+                      <i class="bi bi-gear fs-6 opacity-60 me-2"></i>
+                      Pengaturan
+                      <i class="bi bi-chevron-right pos-absolute right-10"></i>
+                    </a>
+                    <a class="nav-link fw-semibold py-2 px-0" href="../tnc_page/pusat_bantuan.html">
+                      <i class="bi bi-question-circle fs-6 opacity-60 me-2"></i>
+                      Bantuan
+                    </a>
+                  </nav>
+                  <nav class="nav flex-column mb-1">
+                    <h4 class="fs-xs fw-medium text-body-secondary text-uppercase pb-1 mb-2">Iklan</h4>
+                    <a class="nav-link fw-semibold py-2 px-0 active" href="iklan_saya.html">
+                      <i class="bi bi-ui-checks-grid fs-6 opacity-60 me-2"></i>
+                      Iklan saya
+                      <i class="bi bi-chevron-right pos-absolute right-10"></i>
+                    </a>
+                    <a class="nav-link fw-semibold py-2 px-0" href="iklan_favorit.html">
+                      <i class="bi bi-heart fs-6 opacity-60 me-2"></i>
+                      Iklan Favorit
+                      <i class="bi bi-chevron-right pos-absolute right-10"></i>
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- link button (iklan saya & iklan favorit) mobile only -->
+          <div class="iklsy_iklfv">
+            <a href="iklan_saya.html" class="active">Iklan Saya</a>
+            <a href="iklan_favorit.html" class="">Iklan Favorit</a>
+          </div>
+
+          <!-- Page content -->
+          <div class="col-lg-9 pb-2 listProduct">
+            <!-- Page title -->
+            <div class="row cardSub_title">
+              <label>Iklan saya</label>
+              <label>5 iklan</label>
+            </div>
+            <!-- Active filters + Sorting -->
+            <div class="d-flex align-items-baseline justify-content-between">
+              <div class="me-3 activeFilter_desktop">
+                
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0 mb-2 mt-2 sortMobile iklsy">
+                <span class="text-body-secondary text-nowrap fs-sm">Urutkan:</span>
+                <select class="form-select selectFilter py-0">
+                  <option value="semua-iklan">Semua iklan</option>
+                  <option value="iklan-dimoderasi">Iklan dimoderasi</option>
+                  <option value="iklan-aktif">Iklan aktif</option>
+                  <option value="iklan-terjual">Iklan terjual</option>
+                  <option value="iklan-tidak-aktif">Iklan tidak aktif</option>
+                  <option value="iklan-ditolak">Iklan ditolak</option>
+                </select>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 ikl-sy">
+              <!-- Item 1 -->
+              <div class="col badge-aktif">
+                <div class="card position-relative rounded-1 mb-3">
+                  <!-- header card -->
+                  <div class="d-flex align-items-center date-iklsy">
+                    <span class="me-2">30 Des 2023 - 30 Jan 2024</span>
+                    <!-- <button class="btn btn-sm" type="button">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button> -->
+                    <!-- Menu option -->
+                    <div class="btn-group dropdown">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <div class="dropdown-menu my-1 opsi">
+                        <a href="#" class="dropdown-item">
+                          <i class="bi bi-eye"></i>
+                          Lihat iklan
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Ubah</a>
+                        <a href="#" class="dropdown-item">Nonaktifkan</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Hapus</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image -->
+                  <img class="d-block mx-auto img-product" src="../../assets/img/shop/products/01.png" alt="Product">
+                  <!-- detail -->
+                  <figcaption>
+                    <div class="d-flex titleProduk">
+                      <span>Tesla Roadster Merah 1500 CC Seperti Baru</span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <h3 class="h4 mb-0">
+                        <span>Rp </span>
+                        3.518.990.000
+                      </h3>
+                    </div>
+                    <div class="badge-status">
+                      <span class="badge">AKTIF</span>
+                      <span class="badge-info">28 hari tersisa..!</span>
+                    </div>
+                    <div class="row row-cols-3 interaksi">
+                      <div class="col">
+                        <span>1.207</span>
+                        <span>Dilihat</span>
+                      </div>
+                      <div class="col">
+                        <span>414</span>
+                        <span>Disukai</span>
+                      </div>
+                      <div class="col">
+                        <span>57</span>
+                        <span>Dihubungi</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                  <div class="btn-action row row-cols-2">
+                    <button class="btn btn-secondary" type="button">
+                      <span>Sundul</span>
+                    </button>
+                    <button class="btn btn-secondary" type="button">
+                      <span>Set Terjual</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="col badge-moderasi">
+                <div class="card position-relative rounded-1 mb-3">
+                  <!-- header card -->
+                  <div class="d-flex align-items-center date-iklsy">
+                    <span class="me-2">30 Des 2023 - 30 Jan 2024</span>
+                    <!-- Menu option -->
+                    <div class="btn-group dropdown">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <div class="dropdown-menu my-1 opsi">
+                        <a href="#" class="dropdown-item">
+                          <i class="bi bi-eye"></i>
+                          Lihat iklan
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Ubah</a>
+                        <a href="#" class="dropdown-item">Nonaktifkan</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Hapus</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image -->
+                  <img class="d-block mx-auto img-product" src="../../assets/img/shop/products/01.png" alt="Product">
+                  <!-- detail -->
+                  <figcaption>
+                    <div class="d-flex titleProduk">
+                      <span>Tesla Roadster Merah 1500 CC Seperti Baru</span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <h3 class="h4 mb-0">
+                        <span>Rp </span>
+                        3.518.990.000
+                      </h3>
+                    </div>
+                    <div class="badge-status">
+                      <span class="badge">MODERASI</span>
+                      <span class="badge-info">Sedang proses..!</span>
+                    </div>
+                    <div class="row row-cols-3 interaksi">
+                      <div class="col">
+                        <span>1.207</span>
+                        <span>Dilihat</span>
+                      </div>
+                      <div class="col">
+                        <span>414</span>
+                        <span>Disukai</span>
+                      </div>
+                      <div class="col">
+                        <span>57</span>
+                        <span>Dihubungi</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                  <div class="btn-action row row-cols-2">
+                    <button class="btn btn-secondary" type="button">
+                      <span>...</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="col badge-terjual">
+                <div class="card position-relative rounded-1 mb-3">
+                  <!-- header card -->
+                  <div class="d-flex align-items-center date-iklsy">
+                    <span class="me-2">30 Des 2023 - 30 Jan 2024</span>
+                  </div>
+                  <!-- image -->
+                  <img class="d-block mx-auto img-product" src="../../assets/img/shop/products/01.png" alt="Product">
+                  <!-- detail -->
+                  <figcaption>
+                    <div class="d-flex titleProduk">
+                      <span>Tesla Roadster Merah 1500 CC Seperti Baru</span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <h3 class="h4 mb-0">
+                        <span>Rp </span>
+                        3.518.990.000
+                      </h3>
+                    </div>
+                    <div class="badge-status">
+                      <span class="badge">TERJUAL</span>
+                      <span class="badge-info">Yeaay..! Terjual</span>
+                    </div>
+                    <div class="row row-cols-3 interaksi">
+                      <div class="col">
+                        <span>1.207</span>
+                        <span>Dilihat</span>
+                      </div>
+                      <div class="col">
+                        <span>414</span>
+                        <span>Disukai</span>
+                      </div>
+                      <div class="col">
+                        <span>57</span>
+                        <span>Dihubungi</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                  <div class="btn-action row row-cols-2">
+                    <button class="btn btn-secondary" type="button">
+                      <span>Hapus</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="col badge-nonaktif">
+                <div class="card position-relative rounded-1 mb-3">
+                  <!-- header card -->
+                  <div class="d-flex align-items-center date-iklsy">
+                    <span class="me-2">30 Des 2023 - 30 Jan 2024</span>
+                    <!-- Menu option -->
+                    <div class="btn-group dropdown">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <div class="dropdown-menu my-1 opsi">
+                        <a href="#" class="dropdown-item">Ubah</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Hapus</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image -->
+                  <img class="d-block mx-auto img-product" src="../../assets/img/shop/products/01.png" alt="Product">
+                  <!-- detail -->
+                  <figcaption>
+                    <div class="d-flex titleProduk">
+                      <span>Tesla Roadster Merah 1500 CC Seperti Baru</span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <h3 class="h4 mb-0">
+                        <span>Rp </span>
+                        3.518.990.000
+                      </h3>
+                    </div>
+                    <div class="badge-status">
+                      <span class="badge">TIDAK AKTIF</span>
+                      <span class="badge-info">:(</span>
+                    </div>
+                    <div class="row row-cols-3 interaksi">
+                      <div class="col">
+                        <span>1.207</span>
+                        <span>Dilihat</span>
+                      </div>
+                      <div class="col">
+                        <span>414</span>
+                        <span>Disukai</span>
+                      </div>
+                      <div class="col">
+                        <span>57</span>
+                        <span>Dihubungi</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                  <div class="btn-action row row-cols-2">
+                    <button class="btn btn-secondary" type="button">
+                      <span>Pasang</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="col badge-ditolak">
+                <div class="card position-relative rounded-1 mb-3">
+                  <!-- header card -->
+                  <div class="d-flex align-items-center date-iklsy">
+                    <span class="me-2">30 Des 2023 - 30 Jan 2024</span>
+                  </div>
+                  <!-- image -->
+                  <img class="d-block mx-auto img-product" src="../../assets/img/shop/products/01.png" alt="Product">
+                  <!-- detail -->
+                  <figcaption>
+                    <div class="d-flex titleProduk">
+                      <span>Tesla Roadster Merah 1500 CC Seperti Baru</span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <h3 class="h4 mb-0">
+                        <span>Rp </span>
+                        3.518.990.000
+                      </h3>
+                    </div>
+                    <div class="badge-status">
+                      <span class="badge">DITOLAK</span>
+                      <span class="badge-info">Mencurigakan..!</span>
+                    </div>
+                    <div class="row row-cols-3 interaksi">
+                      <div class="col">
+                        <span>1.207</span>
+                        <span>Dilihat</span>
+                      </div>
+                      <div class="col">
+                        <span>414</span>
+                        <span>Disukai</span>
+                      </div>
+                      <div class="col">
+                        <span>57</span>
+                        <span>Dihubungi</span>
+                      </div>
+                    </div>
+                  </figcaption>
+                  <div class="btn-action row row-cols-2">
+                    <button class="btn btn-secondary" type="button">
+                      <span>Hapus</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    <!-- Footer-->
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="bg-footer rounded-5 position-relative overflow-hidden w-100 py-4 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;" data-bs-theme="dark">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;">
+            <img src="../assets/img/landing/web-studio/footer-wave.png" alt="Wave">
+          </div>
+          <div class="container position-relative z-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2 footerMobile">
+              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
+                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
+                  <span class="text-primary flex-shrink-0">
+                      <span class="text-primary flex-shrink-0 me-2">
+                        <img src="../assets/img/logo-autodeal.svg"/>
+                      </span>
+                  </span>
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+                </div>
+                <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+                <!-- <div class="input-group input-group-sm rounded-pill">
+                  <input class="form-control" type="text" placeholder="Email address">
+                  <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
+                </div> -->
+              </div>
+              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Kategori Populer</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Properti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Mobil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Motor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Gadget</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Persyaratan Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2">
+                <h6 class="fw-bold">Contact us</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-2 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <a class="btn btn-icon btn-sm btn-secondary btn-ig rounded-circle mx-2" href="https://www.instagram.com/autodeal_indo/" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-tt rounded-circle mx-2" href="https://www.tiktok.com/@autodeal__id?" aria-label="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-yt rounded-circle mx-2" href="https://www.youtube.com/channel/UCpOhjs2rFzPIQICysbDKgTQ" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
+                <span class="text-body-secondary">&copy; 2023</span>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="../assets/js/autodeal.js"></script>
+    
+  </body>
+</html>

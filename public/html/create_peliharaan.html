@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Autodeal | Pasang Iklan</title>
+    <meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Autodeal">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light create_header">
+        <div class="container">
+          <div class="d-flex">
+            <!-- Button back -->
+            <a href="#" class="btn-back">
+              <i class="bi bi-arrow-left-short"></i>
+            </a>
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+          </div>
+        </div>
+      </header>  
+
+      <!-- Page container -->
+      <div class="container py-5 create_main">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bc_breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Pasang Iklan</li>
+          </ol>
+        </nav>
+
+        <h4>Pasang Iklan</h4>
+
+        <div class="row pb-2 pb-sm-4 createIkl">
+          <!-- Informasi -->
+          <div class="itemFit_02">
+            <div class="itemFit_02-01">
+              <label>INFORMASI</label>
+              <hr>
+            </div>
+            <div class="row itemFit_02-03">
+              <!-- input 1 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Judul Iklan<span>*</span></h6>
+                <label>Judul iklan max. 150 karakter dengan memasukkan merek, jenis iklan,dll</label>
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <input class="form-control" type="text" placeholder="Contoh: Mobil (Merek + Model) + Toko dll">
+              </div>
+              <!-- input 2 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Kategori & Subkategori<span>*</span></h6>
+                <label>Pilih kategori dan subkategori yang sesuai untuk memudahkan pencarian</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="category">
+                    <option value="" selected disabled>Kategori</option>
+                    <option value="properti">Properti</option>
+                    <option value="mobil">Mobil</option>
+                    <option value="motor">Motor</option>
+                    <option value="gadget">Gadget</option>
+                    <option value="elektronik">Elektronik</option>
+                    <option value="olahraga">Olahraga</option>
+                    <option value="peliharaan">Peliharaan</option>
+                    <option value="hobi">Hobi</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="perabotan">Perabotan</option>
+                    <option value="bayipedia">Bayipedia</option>
+                    <option value="perkantoran">Perkantoran</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="subcategory">
+                    <option value="" selected disabled>Sub-kategori</option>
+                    <option value="apartemen">Apartemen</option>
+                    <option value="rumah">Rumah</option>
+                    <option value="kos">Kos</option>
+                    <option value="perkantoran">Perkantoran</option>
+                    <option value="ruko">Ruko</option>
+                    <option value="tanah">Tanah</option>
+                    <option value="lainnya">Lainnya di Properti</option>
+                  </select>
+                </div>
+              </div>
+              <!-- input 3 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Tipe Iklan & Kondisi<span>*</span></h6>
+                <label>Pilih tipe iklan Jual dengan kondisi Baru / Bekas <br>
+                  Pilih tipe iklan Sewa dengan durasi Harian, Mingguan, Bulanan, atau Tahunan</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="type-ikl">
+                    <option value="" selected disabled>Tipe Iklan</option>
+                    <option value="jual">Jual</option>
+                    <option value="sewa">Sewa</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="kondisi">
+                    <option value="" selected disabled>Kondisi</option>
+                    <option value="baru">Baru</option>
+                    <option value="bekas">Bekas</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Motor detail -->
+          <div class="itemFit_02">
+            <div class="itemFit_02-01">
+              <label>PELIHARAAN</label>
+              <hr>
+            </div>
+            <div class="row itemFit_02-03">
+              <!-- input 1 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Umur & Jenis Kelamin</h6>
+                <label>Masukkan umur dan pilih jenis kelamin untuk memudahkan pencarian</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <div class="col-sm-12 col-md-6">
+                  <input class="form-control range-slider-value-min" type="text" pattern="[0-9]*" inputmode="numeric" name="year-field" id="fltr-year-min" minlength="4" maxlength="4" placeholder="24" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="d-content">
+                    <div class="d-inblock">
+                      <input class="btn-check" type="radio" name="jk" value="140 g" checked="" id="jk1">
+                      <label class="btn btn-outline-secondary px-2" for="jk1">
+                        <span class="mx-1">Jantan</span>
+                      </label>
+                    </div>
+                    <div class="d-inblock">
+                      <input class="btn-check" type="radio" name="jk" value="260 g" id="jk2">
+                      <label class="btn btn-outline-secondary px-2" for="jk2">
+                        <span class="mx-1">Betina</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Detail -->
+          <div class="itemFit_02">
+            <div class="itemFit_02-01">
+              <label>DETAIL</label>
+              <hr>
+            </div>
+            <div class="row itemFit_02-03">
+              <!-- input 1 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Foto<span>*</span></h6>
+                <label>Max. 15 foto. Format gambar .jpg .jpeg .png. Upload foto untuk menarik pelanggan</label>
+              </div>
+              <div class="col-sm-6 col-md-8">
+                <!-- File input -->
+                <div class="image-upload">
+                  <div class="image-preview" id="imagePreviewContainer">
+                    <label for="imageUpload" class="image-upload-label" id="uploadLabel">
+                      <div class="image-preview-item">
+                        <span>
+                          <img src="assets/icons/add-img.svg" class="ico-add"/>
+                        </span>
+                        <input type="file" id="imageUpload" class="image-upload-input" multiple>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const imageUploadInput = document.getElementById('imageUpload');
+                    const imagePreviewContainer = document.getElementById('imagePreviewContainer');
+                    const uploadLabel = document.getElementById('uploadLabel');
+                    const maxImages = 15;
+
+                    imageUploadInput.addEventListener('change', handleImageUpload);
+
+                    function handleImageUpload(event) {
+                        const files = event.target.files;
+                        const currentImages = imagePreviewContainer.getElementsByClassName('image-preview-item').length - 1; // exclude the upload button
+                        const newImagesCount = Math.min(files.length, maxImages - currentImages);
+
+                        if (newImagesCount <= 0) {
+                            alert(`Anda hanya dapat mengunggah maksimal ${maxImages} foto.`);
+                            return;
+                        }
+
+                        for (let i = 0; i < newImagesCount; i++) {
+                            const file = files[i];
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                const imgElement = document.createElement('div');
+                                imgElement.classList.add('image-preview-item');
+                                imgElement.innerHTML = `
+                                    <img src="${e.target.result}" alt="Image">
+                                    <button class="remove-btn" onclick="removeImage(this)">×</button>
+                                `;
+                                imagePreviewContainer.insertBefore(imgElement, uploadLabel);
+                                checkImageCount();
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    }
+
+                    window.removeImage = function(button) {
+                        const imageItem = button.parentElement;
+                        imageItem.remove();
+                        checkImageCount();
+                    };
+
+                    function checkImageCount() {
+                        const currentImages = imagePreviewContainer.getElementsByClassName('image-preview-item').length - 1; // exclude the upload button
+                        if (currentImages >= maxImages) {
+                            uploadLabel.style.display = 'none';
+                        } else {
+                            uploadLabel.style.display = 'inline-block';
+                        }
+                    }
+                  });
+                </script>
+              </div>
+              <!-- input 2 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Harga<span>*</span></h6>
+                <label>Tentukan harga</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <input class="form-control range-slider-value-min" type="text" name="currency-field" id="fltr-price_min" data-type="currency" placeholder="Rp 100.000">
+              </div>
+              <!-- input 3 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Deskripsi<span>*</span></h6>
+                <label>Pastikan deskripsi memuat penjelasan detail, agar pembeli mudah mengerti</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <!-- Icon addon + textarea -->
+                <div class="input-group">
+                  <span class="input-group-text align-self-start mt-1">
+                    <i class="bi bi-feather"></i>
+                  </span>
+                  <textarea class="form-control descikl" placeholder="Jelaskan keahlianmu disini..." rows="6"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Lokasi -->
+          <div class="itemFit_02">
+            <div class="itemFit_02-01">
+              <label>LOKASI</label>
+              <hr>
+            </div>
+            <div class="row itemFit_02-03">
+              <!-- input 1 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Provinsi & Kab / Kota<span>*</span></h6>
+                <label>Pilih provinsi yang sesuai untuk memudahkan pencarian</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="category">
+                    <option value="" selected disabled>Pilih Provinsi</option>
+                    <option value="properti">DKI Jakarta</option>
+                    <option value="mobil">Jawa Barat</option>
+                    <option value="motor">Jawa Tengah</option>
+                    <option value="gadget">Jawa Timur</option>
+                    <option value="elektronik">Kalimantan</option>
+                    <option value="olahraga">Sumatera</option>
+                    <option value="peliharaan">Sulawesi</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="subcategory">
+                    <option value="" selected disabled>Kabupaten / Kota</option>
+                    <option value="apartemen">Kab. Bandung</option>
+                    <option value="rumah">Kota Bandung</option>
+                    <option value="kos">Garut</option>
+                    <option value="perkantoran">Sukabumi</option>
+                    <option value="ruko">Tasikmalaya</option>
+                  </select>
+                </div>
+              </div>
+              <!-- input 2 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Kecamatan / Kode Pos<span>*</span></h6>
+                <label>Pilih kecamatan yang sesuai untuk memudahkan pencarian</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="type-ikl">
+                    <option value="" selected disabled>Pilih Kecamatan</option>
+                    <option value="jual">Soreang</option>
+                    <option value="sewa">Ciparay</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <select class="form-select" id="kondisi">
+                    <option value="" selected disabled>Kode Pos</option>
+                    <option value="baru">14410</option>
+                    <option value="bekas">40921</option>
+                  </select>
+                </div>
+              </div>
+              <!-- input 3 -->
+              <div class="col-sm-6 col-md-4">
+                <h6>Detail Alamat<span>*</span></h6>
+                <label>Tuliskan detail alamatmu untuk memudahkan pencarian</label>
+              </div>
+              <div class="row col-sm-6 col-md-8">
+                <!-- Icon addon + textarea -->
+                <div class="input-group">
+                  <span class="input-group-text align-self-start mt-1">
+                    <i class="bi bi-geo-alt"></i>
+                  </span>
+                  <textarea class="form-control" placeholder="Contoh : Jl. Sudirman 123, Patokan depan gedung 123..." rows="6"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- button batal & simpan -->
+          <div class="itemFit_02 txt-r">
+            <button type="button" class="btn btn-secondary">Batal</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+
+    
+    <!-- Footer-->
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="bg-footer rounded-5 position-relative overflow-hidden w-100 py-4 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;" data-bs-theme="dark">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;">
+            <img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave">
+          </div>
+          <div class="container position-relative z-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2 footerMobile">
+              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
+                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
+                  <span class="text-primary flex-shrink-0">
+                      <span class="text-primary flex-shrink-0 me-2">
+                        <img src="assets/img/logo-autodeal.svg"/>
+                      </span>
+                  </span>
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+                </div>
+                <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+                <!-- <div class="input-group input-group-sm rounded-pill">
+                  <input class="form-control" type="text" placeholder="Email address">
+                  <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
+                </div> -->
+              </div>
+              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Kategori Populer</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Properti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Mobil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Motor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Gadget</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Persyaratan Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2">
+                <h6 class="fw-bold">Contact us</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-2 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <a class="btn btn-icon btn-sm btn-secondary btn-ig rounded-circle mx-2" href="https://www.instagram.com/autodeal_indo/" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-tt rounded-circle mx-2" href="https://www.tiktok.com/@autodeal__id?" aria-label="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-yt rounded-circle mx-2" href="https://www.youtube.com/channel/UCpOhjs2rFzPIQICysbDKgTQ" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
+                <span class="text-body-secondary">&copy; 2023</span>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/autodeal.js"></script>
+    
+  </body>
+</html>

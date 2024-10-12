@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Autodeal | Embarcadero siap huni free ppn pet friendly</title>
+    <meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Autodeal">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div> 
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="assets/img/logo-autodeal.svg"/>
+            </span>
+            <span class="d-sm-inline">Autodeal.id</span>
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+          <div class="nav-menu menuMobile">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+
+            <div class="mobileLogin_modal login_no">
+              <!-- Profile Login -->
+              <div class="profileMobile">
+                <img src="assets/icons/person.svg" class="photoProfile_default"/>
+                <img src="assets/img/person/man.jpg" class="photoProfile_real"/>
+                <!-- ganti foto user setelah login -->
+                <div class="nameProfile name_default">
+                  <span>Halo,</span>
+                  <span>Kamu belum login 😢</span> 
+                </div>
+                <div class="nameProfile name_real">
+                  <span>Halo,</span>
+                  <span>John Doe</span> 
+                </div>
+              </div>
+
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Setting -->
+              <div class="row settingProfile">
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Bantuan</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Theme switcher - Mobile -->
+            <div class="form-check form-switch mode-switch modeSwitch-mobile order-lg-3" data-bs-toggle="mode">
+              <span>Mode tema</span>
+              <div class="toggleSwitch">
+                <input class="form-check-input" type="checkbox" id="theme-mode">
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-brightness-low"></i>
+                </label>
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-moon-stars" style="font-size: 11px;"></i>
+                </label>
+              </div>
+            </div>
+
+            <ul class="kategoriMobile">
+              <li><a href="#"><img src="assets/icons/category/properti.png"/>Properti</a></li>
+              <li><a href="#"><img src="assets/icons/category/mobil.png"/>Mobil</a></li>
+              <li><a href="#"><img src="assets/icons/category/motor.png"/>Motor</a></li>
+              <li><a href="#"><img src="assets/icons/category/gadget.png"/>Gadget</a></li>
+              <li><a href="#"><img src="assets/icons/category/elektronik.png"/>Elektronik</a></li>
+              <li><a href="#"><img src="assets/icons/category/olahraga.png"/>Olahraga</a></li>
+              <li><a href="#"><img src="assets/icons/category/peliharaan.png"/>Peliharaan</a></li>
+              <li><a href="#"><img src="assets/icons/category/hobi.png"/>Hobi</a></li>
+              <li><a href="#"><img src="assets/icons/category/fashion.png"/>Fashion</a></li>
+              <li><a href="#"><img src="assets/icons/category/perabotan.png"/>Perabotan</a></li>
+              <li><a href="#"><img src="assets/icons/category/pekerjaan.png"/>Pekerjaan</a></li>
+              <li><a href="#"><img src="assets/icons/category/bayipedia.png"/>Bayipedia</a></li>
+              <li><a href="#"><img src="assets/icons/category/perkantoran.png"/>Perkantoran</a></li>
+            </ul>
+          </div>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <section class="searchBox bg-light">
+              <div class="container">
+                <div class="loc_frame">
+                  <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                  <i class="bi bi-map"></i>
+                  <select class="locationBox" name="state">
+                    <option value="" disabled selected>Indonesia</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                    <option value="Sumatra">Sumatra</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                  </select>
+                </div>
+                <div class="search_frame">
+                  <input type="text" id="input_search" placeholder="Cari disini ..." autocomplete="on">
+                  <button class="btn btn-primary">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+                <div class="result_box">
+                </div>
+              </div>
+            </section>
+          </nav>
+
+          <!-- Search + Account + Cart -->
+          <div class="nav align-items-center order-lg-2 ms-n1 me-sm-0 akunMobile">
+            <!-- profile before login -->
+            <a class="nav-link fs-7 p-2 mx-sm-1 d-sm-flex" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+              <i class="bi bi-person"></i>
+              Login / Daftar
+            </a>
+
+            <!-- profile after login -->
+            <div class="profileDesktop">
+              
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="assets/img/person/man.jpg" class="photoProfile_real"/>
+                </button>
+                <div class="dropdown-menu my-1">
+                  <div class="nameProfile name_real">
+                    <span>Halo,</span>
+                    <span>John Doe</span> 
+                  </div>
+                  
+                  <!-- Theme switcher - Desktop -->
+                  <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
+                    <!-- <div class="toggleSwitch"> -->
+                      <input class="form-check-input" type="checkbox" id="theme-mode">
+                      <label>Mode tema</label>
+                    <!-- </div> -->
+                  </div>
+                  <div class="hr_custom"></div>
+                  <!-- Setting -->
+                  <div class="row settingProfile">
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Profile</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span>Pengaturan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Bantuan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Keluar</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-menu">|</div>
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#" class="active">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#" class="active">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <!-- slider menu -->
+      <div class="menuSlider">
+
+        <section class="position-relative">
+          <!-- Swiper slider -->
+          <div class="container position-relative z-2">
+            <div class="swiper" data-swiper-options='{
+              "slidesPerView": "auto",
+              "spaceBetween": 8,
+              "loop": true,
+              "navigation": {
+                "prevEl": ".prev-gallery",
+                "nextEl": ".next-gallery"
+              }
+            }'>
+              <div class="swiper-wrapper align-items-end swiperMenu">
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/properti.png" class="iconKategori-menu"/>
+                    Properti
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/mobil.png" class="iconKategori-menu"/>
+                    Mobil
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/motor.png" class="iconKategori-menu"/>
+                    Motor
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/gadget.png" class="iconKategori-menu"/>
+                    Gadget
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/elektronik.png" class="iconKategori-menu"/>
+                    Elektronik
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/olahraga.png" class="iconKategori-menu"/>
+                    Olahraga
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/peliharaan.png" class="iconKategori-menu"/>
+                    Peliharaan
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/hobi.png" class="iconKategori-menu"/>
+                    Hobi
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/fashion.png" class="iconKategori-menu"/>
+                    Fashion
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/perabotan.png" class="iconKategori-menu"/>
+                    Perabotan
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/pekerjaan.png" class="iconKategori-menu"/>
+                    Pekerjaan
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/bayipedia.png" class="iconKategori-menu"/>
+                    Bayipedia
+                  </a>
+                </div>
+
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/perkantoran.png" class="iconKategori-menu"/>
+                    Perkantoran
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <!-- Swiper controls (Prev/next buttons) visible on screens > 576px -->
+            <div class="d-none d-sm-flex navMenu bg-light">
+              <button class="prev-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Prev">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="next-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+      <!-- Page container -->
+      <div class="container py-5 mt-5 mb-lg-4 mb-xl-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bc_breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Kategori Properti</a></li>
+            <li class="breadcrumb-item"><a href="#">Apartemen</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Embarcadero siap huni free ppn pet friendly</li>
+          </ol>
+        </nav>
+         
+        <!-- Image Carousel -->
+        <div class="position-relative itemDetail_img">
+
+          <!-- External slider prev/next buttons -->
+          <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle position-absolute top-50 start-0 translate-middle-y" aria-label="Prev">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button type="button" id="next" class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle position-absolute top-50 end-0 translate-middle-y" aria-label="Next">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+
+          <!-- Data total image -->
+          <div class="lbl_detimg">
+            <i class="bi bi-image-fill"></i>
+            <span>4</span> Foto
+          </div>
+
+          <!-- Slider -->
+          <div class="swiper" id="lightgallery" data-swiper-options='{
+            "slidesPerView": 1,
+            "spaceBetween": 12,
+            "loop": false,
+            "navigation": {
+              "prevEl": "#prev",
+              "nextEl": "#next"
+            },
+            "breakpoints": {
+              "600": {
+                "slidesPerView": 2
+              },
+              "1000": {
+                "slidesPerView": 3
+              }
+            }
+          }'>
+            <div class="swiper-wrapper gallery" data-thumbnails="true">
+
+              <!-- Item 1 -->
+              <div class="swiper-slide">
+                <div class="ratio">
+                  <a href="assets/img/img_item/properti/01-apartemen/img_pro_01-00001.jpg" class="gallery-item d-block card-hover">
+                    <div class="detail_box opacity-0">
+                      <i class="bi bi-zoom-in"></i>
+                      <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3"></div>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <img src="assets/img/img_item/properti/01-apartemen/img_pro_01-00001.jpg" class="d-block" alt="Image 1">
+                  </a>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="swiper-slide">
+                <div class="ratio">
+                  <a href="assets/img/img_item/properti/01-apartemen/img_pro_01-00002.jpg" class="gallery-item d-block card-hover">
+                    <div class="detail_box opacity-0">
+                      <i class="bi bi-zoom-in"></i>
+                      <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3"></div>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <img src="assets/img/img_item/properti/01-apartemen/img_pro_01-00002.jpg" class="d-block" alt="Image 2">
+                  </a>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="swiper-slide">
+                <div class="ratio">
+                  <a href="assets/img/img_item/properti/01-apartemen/img_pro_01-00003.jpg" class="gallery-item d-block card-hover">
+                    <div class="detail_box opacity-0">
+                      <i class="bi bi-zoom-in"></i>
+                      <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3"></div>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <img src="assets/img/img_item/properti/01-apartemen/img_pro_01-00003.jpg" class="d-block" alt="Image 3">
+                  </a>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="swiper-slide">
+                <div class="ratio">
+                  <a href="assets/img/img_item/properti/01-apartemen/img_pro_01-00004.jpg" class="gallery-item d-block card-hover">
+                    <div class="detail_box opacity-0">
+                      <i class="bi bi-zoom-in"></i>
+                      <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3"></div>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <img src="assets/img/img_item/properti/01-apartemen/img_pro_01-00004.jpg" class="d-block" alt="Image 4">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <section class="itemDetail_desc">
+          <div class="container">
+            <div class="row">
+
+              <!-- Left Column -->
+              <div class="leftDetail">
+                <!-- fitur 1 -->
+                <div class="itemFit_01">
+                  <div class="itemFit_01-01">
+                    <div class="itemFit_01-01_01">
+                      <!-- <span class="sty-jual">Jual</span> -->
+                      <span class="sty-sewa">Sewa</span>
+                      <!-- <span class="sty-baru">Baru</span> -->
+                      <span class="sty-bekas">Bekas</span>
+                    </div>
+                    <div class="itemFit_01-01_02">
+                      <span>Diposting tanggal:</span>
+                      <span>23/11/2022</span>
+                    </div>
+                  </div>
+                  <div class="itemFit_01-02">
+                    <h5>Embarcadero siap huni free ppn pet friendly</h5>
+                    <h2>Rp <span>12.500.000</span></h2>
+                  </div>
+                  <div class="itemFit_01-04">
+                    <div class="itemFit_01-04_01">
+                      <button class="btn btn-secondary favButton" type="button" aria-label="Add to Favorites">
+                        <i class="bi bi-heart"></i> Favorit
+                      </button>
+                      <a href="#" class="btn btn-secondary"><i class="bi bi-share"></i>Bagikan</a>
+                    </div>
+                    <div class="itemFit_01-04_02">
+                      <a href="#" class="reportUser"><i class="bi bi-flag"></i>Laporkan iklan</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- fitur 2 -->
+                <div class="itemFit_02">
+                  <div class="itemFit_02-01">
+                    <label>DETAIL</label>
+                    <hr>
+                  </div>
+                  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 itemFit_02-03">
+                    <!-- item 1 -->
+                    <div class="col">
+                      <span>Tipe :</span>
+                      <span>Apartemen</span>
+                    </div>
+                    <div class="col">
+                      <span>Kamar Tidur :</span>
+                      <span>2</span>
+                    </div>
+                    <div class="col">
+                      <span>Kamar Mandi :</span>
+                      <span>2</span>
+                    </div>
+                    <div class="col">
+                      <span>Luas Bangunan :</span>
+                      <span>67</span>
+                    </div>
+                    <div class="col">
+                      <span>Luas Tanah :</span>
+                      <span>67</span>
+                    </div>
+                    <div class="col">
+                      <span>Lantai :</span>
+                      <span>9</span>
+                    </div>
+                    <div class="col">
+                      <span>Sertifikat :</span>
+                      <span>Hak Guna Bangunan (HGB)</span>
+                    </div>
+                  </div>
+                  <div class="itemFit_02-01 mt-16">
+                    <label>FASILITAS</label>
+                    <hr>
+                  </div>
+                  <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 itemFit_02-03">
+                    <!-- item 1 -->
+                    <div class="col">
+                      <span>AC</span>
+                    </div>
+                    <div class="col">
+                      <span>Garasi</span>
+                    </div>
+                    <div class="col">
+                      <span>Kolam Renang</span>
+                    </div>
+                    <div class="col">
+                      <span>Taman</span>
+                    </div>
+                    <div class="col">
+                      <span>Alat Pemadam Api</span>
+                    </div>
+                    <div class="col">
+                      <span>Pemanas Air</span>
+                    </div>
+                    <div class="col">
+                      <span>Gorden</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- fitur 3 -->
+                <div class="itemFit_03">
+                  <div class="itemFit_03-01">
+                    <label>DESKRIPSI</label>
+                    <hr>
+                  </div>
+                  <div class="itemFit_03-02">
+                    <p>Full furnished</p>
+                    <p>Kulkas 2 pintu, water heater, kompor tanam modena 2 tungku dan cooker hood, alat masak, alat makan, sofa ruang tamu dan kursi teras, dinding cermin di ruang tamu, AC ruang tamu, Panasonic 4K Smart android TV 50'', meja dan kursi makan, kasur dan lemari di tiap kamar, AC di kamar utama dan kamar ke 2. Jendela menggunakan sunblast, sudah dipasang gorden, Kolam renang, taman bermain, lapangan basket, gym area, barbeque corner, commercial area, mini market, parking access, smart door lock system, sumber air PDAM, listrik 3500 VA.</p>
+                    <p class="clearfix"></p>
+                    <p>Suasana</p>
+                    <p>menghadap pool, lantai rendah, unit baru dan apartemen baru sehingga belum terlalu ramai, masih rasa baru, boleh bawa hewan peliharaan, lingkungan private.</p>
+                    <p class="clearfix"></p>
+                    <p>Belum pernah disewakan, penggunaan pribadi. Dijamin bersih nyaman, peralatan rasa baru. Luas area sekitar 32.160 m2</p>
+                    <p class="clearfix"></p>
+                    <p>- 5 menit ke stasiun kalideres</p>
+                    <p>- Sebrang terminal kalideres</p>
+                    <p>- 5 menit ke halte busway</p>
+                    <p>- 5 menit toll Rawa Buaya (Head Quarter OT Group)</p>
+                    <p>- Di kelilingi dan dekat fasilitas umum (rumah sakit, supermarket, pasar tradisional, kantor polisi, sekolah)</p>
+                    <p>- Harga belum termasuk IPL dan parkir bulanan.</p>
+                    <p class="clearfix"></p>
+                    <p>Harga Sewa</p>
+                    <p>Bulanan 4,3 jt (wajib deposit 1,5 jt dan exclude IPL, air, parkir) Nett</p>
+                    <p>3 bulan 12 jt (wajib deposit 2 ht dan exclude IPL, air, parkir)</p>
+                    <p class="clearfix"></p>
+                    <p>Apartemen Daan Mogot City Tower Blue Jay Lt.3</p>
+                    <p>Jl. Daan Mogot Raya Km 16 Kalideres, Jakarta Barat</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Column -->
+              <div class="rightDetail">
+                <div class="profileDetail">
+                  <div class="p1img">
+                    <img src="./assets/img/person/woman.jpg"/>
+                  </div>
+                  <div class="p2det">
+                    <div>Emanuella Taraka Emanuella Taraka</div>
+                    <span>Bergabung pada Sept 2021</span>
+                    <a href="#">Lihat Profil</a>
+                  </div>
+                  <div class="p3ver">
+                    <div class="ico3ver"><i class="bi bi-person-fill-check"></i></div>
+                    <div class="tex3ver">
+                      <a href="#" class="btn btn-primary">
+                        <i class="bi bi-send-fill"></i> Kirim Pesan
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Collapse -->
+                  <div class="p4md">
+    
+                    <div class="accordion accordion-alt pb-2 mb-4" id="det4">
+                      <!-- detail -->
+                      <div class="accordion-item mb-0">
+                        <div class="accordion-collapse collapse show" id="det4more" data-bs-parent="#shopCategories">
+                          <div class="accordion-body py-1 mb-1">
+                            
+                            <div class="detbio">
+                              <label>BIO</label>
+                              <p>Penjual terpercaya sejak tahun 2010. Bukan penjual musiman yang cepat menghilang.</p>
+                            </div>
+    
+                            <div class="detcontact">
+                              <label>KONTAK</label>
+                              <div class="detphone">
+                                <a href="#">
+                                  <div class="ico4detr"><img src="./assets/icons/wa-ico.svg"/></div>
+                                  <p>+62 813 8861 6110</p>
+                                </a>
+                              </div>
+                              <ul>
+                                <li><a href="#"><img src="./assets/icons/fb-ico.svg"></a></li>
+                                <li><a href="#"><img src="./assets/icons/ig-ico.svg"></a></li>
+                                <li><a href="#"><img src="./assets/icons/yt-ico.svg"></a></li>
+                                <li><a href="#"><img src="./assets/icons/tt-ico.svg"></a></li>
+                              </ul>
+                            </div>
+    
+                            <div class="detaddress">
+                              <label>ALAMAT</label>
+                              <p>Pejaten Village Mall P-5, Jl. Warung Jati Barat, RT.01/RW.05, Jati Padang, Kecamatan Pasar Minggu, Jakarta Selatan, DKI Jakarta</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Page title -->
+        <div class="row pt-xl-3 mt-sm-0 titleLainnya">
+          <div class="col-lg-9 pt-lg-3">
+            <img src="assets/icons/star.png" class="iconNew"/>
+            <h4 class="pb-2 pb-sm-3">Iklan lainnya</h4>
+          </div>
+        </div>
+
+        <div class="row pb-2 pb-sm-4">
+  
+          <!-- Product grid -->
+          <div class="col-lg-12 listProduct">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
+
+              <!-- Item 1-->
+              <div class="col pb-2 pb-sm-3">
+                  <div class="card-hover position-relative rounded-1 mb-3">
+                    <!-- badge + favourite -->
+                    <span class="position-absolute badgePremium">
+                      <img src="assets/icons/lightning.svg"/>
+                      PREMIUM
+                    </span>
+                    <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                      <i class="bi bi-heart"></i>
+                    </button>
+                    <a href="#" class="itemProduct">
+                      <!-- image -->
+                      <img class="d-block mx-auto img-product" src="assets/img/shop/products/01.png" alt="Product">
+                      <!-- detail -->
+                      <figcaption>
+                        <div class="d-flex align-items-center infoViewer">
+                          <span class="me-2 quickInfo">
+                            <span>Jual</span>
+                            -
+                            <span>Bekas</span>
+                          </span>
+                          <span class="quickView">
+                            <i class="bi bi-eye"></i>
+                            120
+                          </span>
+                        </div>
+                        <div class="d-flex quickSpec">
+                          <span>2022</span>
+                          <span>2800 cc</span>
+                          <span>Automatic</span>
+                        </div>
+                        <div class="d-flex titleProduk">
+                          <span>Tesla Roadster</span>
+                        </div>
+                        <div class="d-flex mb-1">
+                          <h3 class="h4 mb-0">
+                            <span>Rp </span>
+                            3.518.990.000
+                          </h3>
+                        </div>
+                        <div class="d-flex align-items-center placeDate">
+                          <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                          <span>Hari ini</span>
+                        </div>
+                      </figcaption>
+                    </a>
+                  </div>
+              </div>
+
+              <!-- Item 2-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3 premiumProduct">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PARTNER
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/02.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          237
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>12 GB</span>
+                        <span>512 GB</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Samsung S22 Ultra With Spen warna Putih</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          18.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Mampang prapatan, Jakarta Selatan</span>
+                        <span>Kemarin</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 3-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/03.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Baru</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>250 cc</span>
+                        <span>Manual</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Kawasaki Ninja 250 FI Blue</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          58.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>29 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 4-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/04.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Sewa</span>
+                          -
+                          <span>Perbuulan</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          621
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2 KT</span>
+                        <span>1 KM</span>
+                        <span>37 m2</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Apartement Sudirman Park</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          4.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Sudirman, Jakarta Pusat</span>
+                        <span>29 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row gy-3 align-items-center pt-3 pt-sm-4 mt-md-2">
+              <div class="col col-12 order-md-2 order-3 text-center">
+                <button class="btn btn-primary w-md-auto w-100" type="button">Lihat iklan lainnya</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- modal Login -->
+     <!-- Modal with tabs and forms -->
+     <div class="modal" id="modalLogin" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="loginTitle">
+            <h4 class="pt-1 mb-0">Halo</h4>
+            <span>Selamat datang!</span>
+          </div>
+          <div class="modal-header">
+            <ul class="nav nav-tabs flex-nowrap text-nowrap mb-n2" role="tablist">
+              <li class="nav-item">
+                <a href="#signin" class="nav-link flex-column flex-sm-row px-3 px-sm-4 active" data-bs-toggle="tab" role="tab" aria-selected="true">
+                  <i class="ai-login me-sm-2 ms-sm-n1"></i>
+                  <span class="d-none d-sm-inline">Login</span>
+                  <span class="fs-sm fw-medium d-sm-none pt-1">Login</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#signup" class="nav-link flex-column flex-sm-row px-3 px-sm-4" data-bs-toggle="tab" role="tab" aria-selected="false">
+                  <i class="ai-user me-sm-2 ms-sm-n1"></i>
+                  <span class="d-none d-sm-inline">Daftar</span>
+                  <span class="fs-sm fw-medium d-sm-none pt-1">Daftar</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-body tab-content">
+            <form class="tab-pane fade show active" id="signin" autocomplete="off">
+              <div class="mb-3 mb-sm-3">
+                <input type="email" class="form-control" id="email1" placeholder="email@example.com" autocomplete="username">
+              </div>
+              <div class="mb-3 mb-sm-4">
+                <div class="password-toggle">
+                  <input type="password" class="form-control" id="pass1" placeholder="password" autocomplete="current-password">
+                  <label class="password-toggle-btn">
+                    <input class="password-toggle-check" type="checkbox">
+                    <span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-4 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input type="checkbox" class="form-check-input" id="remember">
+                  <label for="remember" class="form-check-label">Ingat saya</label>
+                </div>
+                <a href="#" class="fs-sm forgotPass">Lupa password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 btnSubmit">Login</button>
+              <div class="loginThirdParty">
+                <span>atau login dengan</span>
+                <a href="#" class="loginGoogle">
+                  <img src="assets/icons/google.svg"/>
+                </a>
+                <span class="validasiLogin">Kami tidak akan membagikan data pribadi Anda dengan siapapun</span>
+              </div>
+            </form>
+            <form class="tab-pane fade" id="signup" autocomplete="off">
+              <div class="mb-3 mb-sm-3">
+                <input type="text" class="form-control" id="name" placeholder="Nama lengkap" autocomplete="off">
+              </div>
+              <div class="mb-3 mb-sm-3">
+                <input type="email" class="form-control" id="email2" placeholder="email@example.com" autocomplete="off">
+              </div>
+              <div class="mb-3 mb-sm-3">
+                <div class="password-toggle">
+                  <input type="password" class="form-control" id="pass2" placeholder="password" autocomplete="off">
+                  <label class="password-toggle-btn">
+                    <input type="checkbox" class="password-toggle-check">
+                    <span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-4 mb-sm-4">
+                <div class="password-toggle">
+                  <input type="password" class="form-control" id="pass3" placeholder="confirm password" autocomplete="off">
+                  <label class="password-toggle-btn">
+                    <input type="checkbox" class="password-toggle-check">
+                    <span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 btnSubmit">Daftar</button>
+              <div class="loginThirdParty">
+                <span>atau login dengan</span>
+                <a href="#" class="loginGoogle">
+                  <img src="assets/icons/google.svg"/>
+                </a>
+                <span class="validasiLogin">
+                  Dengan mendaftar, Anda setuju dengan 
+                  <a href="#">Syarat & ketentuan</a> serta <a href="#">Kebijakan privasi</a>
+                  dari Autodeal
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Footer-->
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="bg-footer rounded-5 position-relative overflow-hidden w-100 py-4 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;" data-bs-theme="dark">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;">
+            <img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave">
+          </div>
+          <div class="container position-relative z-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2 footerMobile">
+              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
+                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
+                  <span class="text-primary flex-shrink-0">
+                      <span class="text-primary flex-shrink-0 me-2">
+                        <img src="assets/img/logo-autodeal.svg"/>
+                      </span>
+                  </span>
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+                </div>
+                <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+                
+              </div>
+              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Kategori Populer</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Properti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Mobil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Motor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Gadget</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Persyaratan Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2">
+                <h6 class="fw-bold">Contact us</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-2 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <a class="btn btn-icon btn-sm btn-secondary btn-ig rounded-circle mx-2" href="https://www.instagram.com/autodeal_indo/" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-tt rounded-circle mx-2" href="https://www.tiktok.com/@autodeal__id?" aria-label="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-yt rounded-circle mx-2" href="https://www.youtube.com/channel/UCpOhjs2rFzPIQICysbDKgTQ" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
+                <span class="text-body-secondary">&copy; 2023</span>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/autodeal.js"></script>
+    
+  </body>
+</html>

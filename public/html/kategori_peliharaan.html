@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Autodeal | Peliharaan</title>
+    <meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Autodeal">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="assets/img/logo-autodeal.svg"/>
+            </span>
+            <span class="d-sm-inline">Autodeal.id</span>
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+          <div class="nav-menu menuMobile">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+
+            <div class="mobileLogin_modal login_no">
+              <!-- Profile Login -->
+              <div class="profileMobile">
+                <img src="assets/icons/person.svg" class="photoProfile_default"/>
+                <img src="assets/img/person/man.jpg" class="photoProfile_real"/>
+                <!-- ganti foto user setelah login -->
+                <div class="nameProfile name_default">
+                  <span>Halo,</span>
+                  <span>Kamu belum login 😢</span> 
+                </div>
+                <div class="nameProfile name_real">
+                  <span>Halo,</span>
+                  <span>John Doe</span> 
+                </div>
+              </div>
+
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Setting -->
+              <div class="row settingProfile">
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Profile</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Bantuan</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Theme switcher - Mobile -->
+            <div class="form-check form-switch mode-switch modeSwitch-mobile order-lg-3" data-bs-toggle="mode">
+              <span>Mode tema</span>
+              <div class="toggleSwitch">
+                <input class="form-check-input" type="checkbox" id="theme-mode">
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-brightness-low"></i>
+                </label>
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-moon-stars" style="font-size: 11px;"></i>
+                </label>
+              </div>
+            </div>
+
+            <ul class="kategoriMobile">
+              <li><a href="#"><img src="assets/icons/category/properti.png"/>Properti</a></li>
+              <li><a href="#"><img src="assets/icons/category/mobil.png"/>Mobil</a></li>
+              <li><a href="#"><img src="assets/icons/category/motor.png"/>Motor</a></li>
+              <li><a href="#"><img src="assets/icons/category/gadget.png"/>Gadget</a></li>
+              <li><a href="#"><img src="assets/icons/category/elektronik.png"/>Elektronik</a></li>
+              <li><a href="#"><img src="assets/icons/category/olahraga.png"/>Olahraga</a></li>
+              <li><a href="#"><img src="assets/icons/category/peliharaan.png"/>Peliharaan</a></li>
+              <li><a href="#"><img src="assets/icons/category/hobi.png"/>Hobi</a></li>
+              <li><a href="#"><img src="assets/icons/category/fashion.png"/>Fashion</a></li>
+              <li><a href="#"><img src="assets/icons/category/perabotan.png"/>Perabotan</a></li>
+              <li><a href="#"><img src="assets/icons/category/pekerjaan.png"/>Pekerjaan</a></li>
+              <li><a href="#"><img src="assets/icons/category/bayipedia.png"/>Bayipedia</a></li>
+              <li><a href="#"><img src="assets/icons/category/perkantoran.png"/>Perkantoran</a></li>
+            </ul>
+          </div>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <section class="searchBox bg-light">
+              <div class="container">
+                <div class="loc_frame">
+                  <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                  <i class="bi bi-map"></i>
+                  <select class="locationBox" name="state">
+                    <option value="" disabled selected>Indonesia</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                    <option value="Sumatra">Sumatra</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                  </select>
+                </div>
+                <div class="search_frame">
+                  <input type="text" id="input_search" placeholder="Cari disini ..." autocomplete="on">
+                  <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="result_box">
+                </div>
+              </div>
+            </section>
+          </nav>
+
+          <!-- Search + Account + Cart -->
+          <div class="nav align-items-center order-lg-2 ms-n1 me-sm-0 akunMobile">
+            <!-- profile before login -->
+            <a class="nav-link fs-7 p-2 mx-sm-1 d-sm-flex" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+              <i class="bi bi-person"></i>
+              Login / Daftar
+            </a>
+
+            <!-- profile after login -->
+            <div class="profileDesktop">
+              
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="assets/img/person/man.jpg" class="photoProfile_real"/>
+                </button>
+                <div class="dropdown-menu my-1">
+                  <div class="nameProfile name_real">
+                    <span>Halo,</span>
+                    <span>John Doe</span> 
+                  </div>
+                  
+                  <!-- Theme switcher - Desktop -->
+                  <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
+                    <!-- <div class="toggleSwitch"> -->
+                      <input class="form-check-input" type="checkbox" id="theme-mode">
+                      <label>Mode tema</label>
+                    <!-- </div> -->
+                  </div>
+                  <div class="hr_custom"></div>
+                  <!-- Setting -->
+                  <div class="row settingProfile">
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Profile</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span>Pengaturan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Bantuan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Keluar</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separator-menu">|</div>
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- slider menu -->
+      <div class="menuSlider">
+
+        <section class="position-relative">
+          <!-- Swiper slider -->
+          <div class="container position-relative z-2">
+            <div class="swiper" data-swiper-options='{
+              "slidesPerView": "auto",
+              "spaceBetween": 8,
+              "loop": true,
+              "navigation": {
+                "prevEl": ".prev-gallery",
+                "nextEl": ".next-gallery"
+              }
+            }'>
+              <div class="swiper-wrapper align-items-end swiperMenu">
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/properti.png" class="iconKategori-menu"/>
+                    Properti
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/mobil.png" class="iconKategori-menu"/>
+                    Mobil
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/motor.png" class="iconKategori-menu"/>
+                    Motor
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/gadget.png" class="iconKategori-menu"/>
+                    Gadget
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/elektronik.png" class="iconKategori-menu"/>
+                    Elektronik
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/olahraga.png" class="iconKategori-menu"/>
+                    Olahraga
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/peliharaan.png" class="iconKategori-menu"/>
+                    Peliharaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/hobi.png" class="iconKategori-menu"/>
+                    Hobi
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/fashion.png" class="iconKategori-menu"/>
+                    Fashion
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/perabotan.png" class="iconKategori-menu"/>
+                    Perabotan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/pekerjaan.png" class="iconKategori-menu"/>
+                    Pekerjaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/bayipedia.png" class="iconKategori-menu"/>
+                    Bayipedia
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="assets/icons/category/perkantoran.png" class="iconKategori-menu"/>
+                    Perkantoran
+                  </a>
+                </div>
+  
+              </div>
+            </div>
+            <!-- Swiper controls (Prev/next buttons) visible on screens > 576px -->
+            <div class="d-none d-sm-flex navMenu bg-light">
+              <button class="prev-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Prev">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="next-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+
+      <!-- Page container -->
+      <div class="container py-5 mt-5 mb-lg-4 mb-xl-5">
+
+        <!-- Page title -->
+        <div class="row mt-n1 cardSub">
+          <div class="col-lg-12 pt-lg-3 cardSub_bg">
+            <h4 class="pb-2 pb-sm-3">
+              <div class="left">
+                <span>Kucing Angora Putih</span>
+                - di
+                <span>Baleendah</span>
+              </div>
+              <div class="right">
+                <span>1.254</span>
+                <span>iklan</span>
+              </div>
+            </h4>
+          </div>
+        </div>
+        <div class="row pb-2 pb-sm-4">
+  
+          <!-- Sidebar (offcanvas on sreens < 992px) -->
+          <aside class="col-lg-3">
+            <div class="offcanvas-lg offcanvas-start" id="shopSidebar">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Filter</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#shopSidebar" aria-label="Close"></button>
+              </div>
+  
+              <!-- Body -->
+              <div class="offcanvas-body pt-2 pt-lg-0 pe-lg-4">
+  
+                <!-- Categories (accordion with checkboxes) -->
+                <h3 class="h5">Filter</h3>
+                <div class="accordion accordion-alt pb-2 mb-4" id="shopCategories">
+                   <!-- Filter Kategori -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#fltr-kategori" aria-expanded="true" aria-controls="fltr-kategori">
+                        <span class="fs-base">Kategori</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="fltr-kategori" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <ul class="fltr-kategori_lv1">
+                          <li>
+                            <a href="#" class="fltr-kategori_lv1">Peliharaan</a>
+                            <ul class="fltr-kategori_lv2 ulLast">
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Aksesoris</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Anjing</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li class="active">
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Kucing</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Burung</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Ikan</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Perawatan</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="fltr-kategori_lv2">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Lainnya</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Lokasi -->
+                  <div class="accordion-item mb-0 alok">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#fltr-lokasi" aria-expanded="true" aria-controls="fltr-lokasi">
+                        <span class="fs-base">Lokasi</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="fltr-lokasi" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <ul class="fltr-lokasi_lv1">
+                          <li>
+                            <a href="#" class="fltr-lokasi_country">Indonesia</a>
+                            <ul class="fltr-lokasi_lv2">
+                              <li>
+                                <a href="#" class="fltr-lokasi_province">
+                                  <label class="form-check-label d-flex align-items-center">
+                                    <span class="text-nav fw-medium">Jawa Barat</span>
+                                    <span class="fs-xs text-body-secondary ms-auto">12813</span>
+                                  </label>
+                                </a>
+                                <ul class="fltr-lokasi_lv3">
+                                  <li>
+                                    <a href="#" class="fltr-lokasi_city">
+                                      <label class="form-check-label d-flex align-items-center">
+                                        <span class="text-nav fw-medium">Kab. Bandung</span>
+                                        <span class="fs-xs text-body-secondary ms-auto">5813</span>
+                                      </label>
+                                    </a>
+                                    <ul class="fltr-lokasi_lv4 ulLast">
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Arjasari</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li class="active">
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Baleendah</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">1254</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Banjaran</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">113</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Bojongsoang</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">313</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Cangkuang</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">612</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Cicalengka</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Cileunyi</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Cimeunyan</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Ciparay</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Ciwidey</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Dago</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Dayeuhkolot</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Katapang</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Majalaya</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Margaasih</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Margahayu</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Pameungpeuk</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Pangalengan</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">1122</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Rancaekek</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">411</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="fltr-lokasi_district">
+                                          <label class="form-check-label d-flex align-items-center">
+                                            <span class="text-nav fw-medium">Soreang</span>
+                                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                                          </label>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Tipe Iklan -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#fltr-tipe_iklan" aria-expanded="false" aria-controls="fltr-tipe_iklan">
+                        <span class="fs-base">Tipe Iklan</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="fltr-tipe_iklan" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-tipe_iklan_01">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-tipe_iklan_01">
+                            <span class="text-nav fw-medium">Jual</span>
+                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-tipe_iklan_02">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-tipe_iklan_02">
+                            <span class="text-nav fw-medium">Sewa</span>
+                            <span class="fs-xs text-body-secondary ms-auto">387</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Kondisi Produk -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#fltr-kondisi" aria-expanded="false" aria-controls="fltr-kondisi">
+                        <span class="fs-base">Kondisi</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="fltr-kondisi" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-kondisi_01">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-kondisi_01">
+                            <span class="text-nav fw-medium">Baru</span>
+                            <span class="fs-xs text-body-secondary ms-auto">1416</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-kondisi_02">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-kondisi_02">
+                            <span class="text-nav fw-medium">Bekas</span>
+                            <span class="fs-xs text-body-secondary ms-auto">113</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Filter Price -->
+                  <div class="range-slider" data-start-min="10" data-start-max="50" data-min="0" data-max="80" data-step="1" data-tooltip-prefix="$">
+                    <h4 class="fs-base labelPrice">Harga</h3>
+                    <div>
+                      <div class="d-block align-items-center">
+                        <label class="form-label me-2 mb-0 d-inline-block" for="fltr-price_min">Dari</label>
+                        <input class="form-control range-slider-value-min" style="max-width: 6rem;" type="text" name="currency-field" id="fltr-price_min" data-type="currency" placeholder="Rp 1,000">
+                      </div>
+                      <div class="d-block align-items-center mt-4">
+                        <label class="form-label me-2 mb-0 d-inline-block" for="fltr-price_max">Hingga</label>
+                        <input class="form-control range-slider-value-max" style="max-width: 6rem;" type="text" name="currency-field" id="fltr-price_max" data-type="currency" placeholder="Rp 1,000,000">
+                      </div>
+                      <button class="btn btn-primary btnOnFilter">Terapkan</button>
+                    </div>
+                  </div>
+                  <!-- Filter Tahun -->
+                  <div class="range-slider" data-start-min="10" data-start-max="50" data-min="0" data-max="80" data-step="1" data-tooltip-prefix="$">
+                    <h4 class="fs-base labelYear">Umur /tahun</h4>
+                    <div>
+                      <div class="d-block align-items-center">
+                        <label class="form-label me-2 mb-0 d-inline-block" for="fltr-year-min">Dari</label>
+                        <input class="form-control range-slider-value-min" style="max-width: 6rem;" type="text" pattern="[0-9]*" inputmode="numeric" name="year-field" id="fltr-year-min" minlength="4" maxlength="4" placeholder="1" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                      </div>
+                      <div class="d-block align-items-center mt-4">
+                        <label class="form-label me-2 mb-0 d-inline-block" for="fltr-year-max">Hingga</label>
+                        <input class="form-control range-slider-value-max" style="max-width: 6rem;" type="text" pattern="[0-9]*" inputmode="numeric" name="year-field" id="fltr-year-max" minlength="4" maxlength="4" placeholder="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                      </div>
+                      <button class="btn btn-primary btnOnFilter">Terapkan</button>
+                    </div>
+                  </div>
+                  <!-- Filter Jenis Kelamin -->
+                  <div class="accordion-item mb-0">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button collapsed fs-xl fw-medium py-2" type="button" data-bs-toggle="collapse" data-bs-target="#fltr-jkelamin_peliharaan" aria-expanded="false" aria-controls="fltr-jkelamin_peliharaan">
+                        <span class="fs-base">Jenis Kelamin</span>
+                      </button>
+                    </h4>
+                    <div class="accordion-collapse collapse show" id="fltr-jkelamin_peliharaan" data-bs-parent="#shopCategories">
+                      <div class="accordion-body py-1 mb-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-jkelamin_peliharaan_01">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-jkelamin_peliharaan_01">
+                            <span class="text-nav fw-medium">Jantan</span>
+                            <span class="fs-xs text-body-secondary ms-auto">813</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fltr-jkelamin_peliharaan_02">
+                          <label class="form-check-label d-flex align-items-center" for="fltr-jkelamin_peliharaan_02">
+                            <span class="text-nav fw-medium">Betina</span>
+                            <span class="fs-xs text-body-secondary ms-auto">387</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </aside>
+  
+  
+          <!-- Product grid -->
+          <div class="col-lg-9 listProduct">
+
+            <!-- Active filters + Sorting -->
+            <div class="d-flex align-items-baseline justify-content-between mb-36 mb-20">
+              <div class="me-3 activeFilter_desktopOnly">
+                <div class="nav d-md-none">
+                  <a class="nav-link dropdown-toggle fs-sm p-0 mb-2" href="shop-catalog.html#activeFilters" data-bs-toggle="collapse">Active filters</a>
+                </div>
+                <div class="collapse d-md-block" id="activeFilters">
+                  <div class="pt-2 pt-md-0">
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        Honda<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        Vario<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        10.000.000 - 20.000.000<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        Honda<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        Vario<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <a class="d-inline-block border rounded-pill fs-xs fw-medium text-body text-decoration-none py-1 px-2 me-2 mb-2" href="shop-catalog.html#">
+                      <span class="d-inline-flex align-items-center text-nowrap px-1">
+                        10.000.000 - 20.000.000<i class="bi bi-x-circle-fill"></i>
+                      </span>
+                    </a>
+                    <button class="btn btn-sm btn-secondary rounded-pill fw-medium py-1 px-2" type="button">
+                      <span class="px-1">Remove all filters</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0 mb-2 sortMobile">
+                <span class="text-body-secondary text-nowrap fs-sm">Urutkan:</span>
+                <select class="form-select selectFilter py-0">
+                  <option value="newest">Terbaru</option>
+                  <option value="nearest">Terdekat</option>
+                  <option value="low-high">Termurah</option>
+                  <option value="high-low">Termahal</option>
+                </select>
+              </div>
+              <!-- Sidebar toggle button -->
+              <button class="d-lg-none btn btn-sm fs-sm rounded-0 btnFilter" type="button" data-bs-toggle="offcanvas" data-bs-target="#shopSidebar">
+                <i class="bi bi-sliders"></i>
+              </button>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
+
+              <!-- Item 1-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/01.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          120
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>2800 cc</span>
+                        <span>Automatic</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Tesla Roadster</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          3.518.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>Hari ini</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 2-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3 premiumProduct">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PARTNER
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/02.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          237
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>12 GB</span>
+                        <span>512 GB</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Samsung S22 Ultra With Spen warna Putih</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          18.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Mampang prapatan, Jakarta Selatan</span>
+                        <span>Kemarin</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 3-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/03.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Baru</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>250 cc</span>
+                        <span>Manual</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Kawasaki Ninja 250 FI Blue</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          58.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>29 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 4-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/04.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Sewa</span>
+                          -
+                          <span>Perbuulan</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          621
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2 KT</span>
+                        <span>1 KM</span>
+                        <span>37 m2</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Apartement Sudirman Park</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          4.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Sudirman, Jakarta Pusat</span>
+                        <span>29 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 5-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/05.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Sewa</span>
+                          -
+                          <span>Perbulan</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          543
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>4 KT</span>
+                        <span>3 KT</span>
+                        <span>180 m2</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Rumah Mewah Minimalis di Jakarta Pusat</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          19.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>28 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 6-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/06.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>150 cc</span>
+                        <span>Automatic</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Yamaha AEROX Full Modif Silver</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          38.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>28 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 7-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/07.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2023</span>
+                        <span>250 cc</span>
+                        <span>Automatic</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>BMW Motor Listrik CE - 04</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          418.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>27 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 8-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/08.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>16 GB</span>
+                        <span>1 TB</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>ASUS ROG Zephyrus DUO 15” Seperti Baru</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          58.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>27 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 9-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/09.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Baru</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>8 GB</span>
+                        <span>512 GB</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Apple Macbook Pro M2</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          38.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>26 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 10-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/10.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Sewa</span>
+                          -
+                          <span>Perhari</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          1456
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>4 KT</span>
+                        <span>3 KM</span>
+                        <span>146 m2</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Villa Mewah Di Puncak Bogor</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          18.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>25 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 11-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3 premiumProduct">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/11.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          2156
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>1500 cc</span>
+                        <span>Automatic</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Mini Cooper</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          638.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>24 Mei</span>
+                      </div>
+                    </figcaption>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Item 12-->
+              <div class="col pb-2 pb-sm-3">
+                <div class="card-hover position-relative rounded-1 mb-3">
+                  <!-- badge + favourite -->
+                  <span class="position-absolute badgePremium">
+                    <img src="assets/icons/lightning.svg"/>
+                    PREMIUM
+                  </span>
+                  <button class="btn btn-icon favButton btn-sm btn-light bg-light border-0 position-absolute top-0 end-0 mt-3 me-3 z-5" type="button" aria-label="Add to Favorites">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <a href="#" class="itemProduct">
+                    <!-- image -->
+                    <img class="d-block mx-auto img-product" src="assets/img/shop/products/12.png" alt="Product">
+                    <!-- detail -->
+                    <figcaption>
+                      <div class="d-flex align-items-center infoViewer">
+                        <span class="me-2 quickInfo">
+                          <span>Jual</span>
+                          -
+                          <span>Bekas</span>
+                        </span>
+                        <span class="quickView">
+                          <i class="bi bi-eye"></i>
+                          120
+                        </span>
+                      </div>
+                      <div class="d-flex quickSpec">
+                        <span>2022</span>
+                        <span>8 GB</span>
+                        <span>256 GB</span>
+                      </div>
+                      <div class="d-flex titleProduk">
+                        <span>Microsoft Surface X i7</span>
+                      </div>
+                      <div class="d-flex mb-1">
+                        <h3 class="h4 mb-0">
+                          <span>Rp </span>
+                          28.990.000
+                        </h3>
+                      </div>
+                      <div class="d-flex align-items-center placeDate">
+                        <span class="me-2">Kebayoran Baru, Jakarta Selatan</span>
+                        <span>Hari ini</span>
+                      </div>
+                    </div>
+                    </figcaption>
+                  </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row gy-3 align-items-center pt-3 pt-sm-4 mt-md-2">
+              <div class="col col-12 order-md-2 order-3 text-center">
+                <button class="btn btn-primary w-md-auto w-100" type="button">Selanjutnya</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    
+    <!-- Footer-->
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="bg-footer rounded-5 position-relative overflow-hidden w-100 py-4 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;" data-bs-theme="dark">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;">
+            <img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave">
+          </div>
+          <div class="container position-relative z-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2 footerMobile">
+              <div class="col-lg-4 col-xxl-3 pb-2 pb-lg-0 mb-4 mb-lg-0">
+                <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
+                  <span class="text-primary flex-shrink-0">
+                      <span class="text-primary flex-shrink-0 me-2">
+                        <img src="assets/img/logo-autodeal.svg"/>
+                      </span>
+                  </span>
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+                </div>
+                <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+                <!-- <div class="input-group input-group-sm rounded-pill">
+                  <input class="form-control" type="text" placeholder="Email address">
+                  <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
+                </div> -->
+              </div>
+              <div class="col-sm-4 col-lg-2 offset-lg-1 offset-xl-2 offset-xxl-3 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Kategori Populer</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Properti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Mobil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Motor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Gadget</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Persyaratan Layanan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="#">Kebijakan Privasi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2">
+                <h6 class="fw-bold">Contact us</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-2 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <a class="btn btn-icon btn-sm btn-secondary btn-ig rounded-circle mx-2" href="https://www.instagram.com/autodeal_indo/" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-tt rounded-circle mx-2" href="https://www.tiktok.com/@autodeal__id?" aria-label="TikTok">
+                  <i class="bi bi-tiktok"></i>
+                </a>
+                <a class="btn btn-icon btn-sm btn-secondary btn-yt rounded-circle mx-2" href="https://www.youtube.com/channel/UCpOhjs2rFzPIQICysbDKgTQ" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+              <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
+                <span class="text-body-secondary">&copy; 2023</span>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/autodeal.js"></script>
+    
+  </body>
+</html>

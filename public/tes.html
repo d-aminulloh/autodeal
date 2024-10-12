@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Maps API v3 Infowindows with multiple markers</title>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyAeP8Z24tLONhyYKemBMuczeKHk_ynU_pU"></script>
+        <style id="compiled-css" type="text/css">
+            html, body, #map {
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .infowindow-container {
+                width: 400px;
+                height: 110px;
+            }
+
+            .inner {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                padding: 10px;
+                z-index: -1;
+            }
+        </style>
+    <body>
+        <div id="map"></div>
+        <script type="text/javascript">
+            function initialize() {
+                var location = [
+                    ['Bandung', -6.926884, 107.607347,1, "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-mble/tix-hotel/images-web/2023/09/05/a9279b74-d79c-4001-8bba-429bcfdadb30-1693918949395-8080360f172a37869b38066f832d5b53.jpg", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"],
+                    ['Jakarta', -6.200103, 106.829297,1, "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-mble/tix-hotel/images-web/2023/09/05/a9279b74-d79c-4001-8bba-429bcfdadb30-1693918949395-8080360f172a37869b38066f832d5b53.jpg", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"],
+                    ['Yogyakarta', -7.788641, 110.366912,1, "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-mble/tix-hotel/images-web/2023/09/05/a9279b74-d79c-4001-8bba-429bcfdadb30-1693918949395-8080360f172a37869b38066f832d5b53.jpg", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"],
+                    ['Tasik Malaya', -7.341048, 108.211157,1, "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-mble/tix-hotel/images-web/2023/09/05/a9279b74-d79c-4001-8bba-429bcfdadb30-1693918949395-8080360f172a37869b38066f832d5b53.jpg", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"],
+                ];
+                var infowindow = new google.maps.InfoWindow();
+            
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 7, // zoom saat load
+                    center: new google.maps.LatLng(-7.311790, 109.740818), // center jawa tengah
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                // load marker and click event
+                for (var i = 0; i < location.length; i++) {            
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(location[i][1], location[i][2]),
+                        map: map,
+                        title: location[i][0]
+                    });
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            infowindow.setContent(` <div class='infowindow-container'>
+                                                        <img src='${location[i][4]}' width="100px"></img>
+                                                        <div class='inner'>
+                                                            <h4> ${location[i][0]} (${location[i][1]}, ${location[i][2]})</h4>
+                                                            Rating: 5 &nbsp; &nbsp; Total reviews: 999
+                                                            <p>${location[i][5]}</p>
+                                                    </div></div>`);
+                            infowindow.open(map, marker);
+                        }
+                    })(marker, i)); 
+                }
+            }
+            initialize();
+        </script>
+    </body>
+</html>
