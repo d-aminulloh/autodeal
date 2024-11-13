@@ -8,6 +8,11 @@ header a.navbar-brand span{
     letter-spacing: -0.8px;
     font-weight: 700;
 }
+.profileDesktop .my-1 .form-switch.mode-switch{
+    padding: var(--ar-dropdown-item-padding-y) var(--ar-dropdown-item-padding-x);
+    display: block;
+}
+.profileDesktop .my-1 .form-switch.mode-switch input{float: right;}
 header a.nav-link,
 button.btn-kategori{
     font-family: "Quicksand";
@@ -15,6 +20,7 @@ button.btn-kategori{
     letter-spacing: -0.4px;
     font-size: 15px;
 }
+
 .fQuick{
     font-family: 'Quicksand';
 }
@@ -47,6 +53,7 @@ button.btn-kategori{
 .right-10{
     right: 10px;
 }
+.txt-l{text-align: left !important;}
 .txt-r{text-align: right !important;}
 .txt-c{text-align: center !important;}
 .d-content{
@@ -88,6 +95,7 @@ img.btn-menu{
     font-size: 12px !important;
 }
 .mt-0{margin-top: 0 !important;}
+.mt-6{margin-top: 4px;}
 .mt-16{margin-top: 16px;}
 .mb-0{margin-bottom: 0 !important;}
 .mb-20{margin-bottom: 20px;}
@@ -1116,8 +1124,8 @@ ul.kategoriMobile li a img{
     transition: all .2s ease-in-out;
 }
 .profileDesktop .dropdown .dropdown-menu{
-    padding: 24px 20px;
-    width: 284px;
+    /* padding: 24px 20px; */
+    /* width: 284px; */
     border-radius: 12px;
 }
 .profileDesktop .hr_custom{
@@ -1191,6 +1199,24 @@ ul.kategoriMobile li a img{
 .menuMobile .settingProfile .col:nth-child(4) a{
     color: #FF5B5B;
 }
+.profileDesktop .dropdown-menu.my-1 i{
+    font-size: 16px;
+    margin-right: 8px;
+}
+.profileDesktop .dropdown-menu.my-1 a:last-child,
+.profileDesktop .dropdown-menu.my-1 i.bi-box-arrow-right{
+    color: #FF5B5B;
+}
+.profileDesktop .dropdown-menu.my-1 a{
+    margin: 2px 0px;
+}
+.profileDesktop .dropdown-menu.my-1 a:hover{
+    background-color: rgb(67 140 116 / 20%);
+}
+.profileDesktop .dropdown-menu.my-1{
+    padding: 14px 0px;
+}
+
 .akunMobile .profileDesktop .nameProfile{
     width: 80%;
     display: inline-block;
