@@ -133,7 +133,7 @@
     --ar-body-font-size: 1rem;
     --ar-body-font-weight: 400;
     --ar-body-line-height: 1.5;
-    --ar-body-color: #576071;
+    --ar-body-color: #222;
     --ar-body-color-rgb: 87, 96, 113;
     --ar-body-bg: #fff;
     --ar-body-bg-rgb: 255, 255, 255;
@@ -182,7 +182,7 @@
   }
   [data-bs-theme="dark"] {
     color-scheme: dark;
-    --ar-body-color: rgba(255, 255, 255, 0.7);
+    --ar-body-color: rgba(255, 255, 255, 0.9);
     --ar-body-color-rgb: 255, 255, 255;
     --ar-body-bg: #121519;
     --ar-body-bg-rgb: 18, 21, 25;
@@ -1949,8 +1949,8 @@
   .form-label {
     margin-bottom: 0.3125rem;
     font-size: calc(var(--ar-body-font-size) * 0.875);
-    font-weight: 500;
-    color: var(--ar-gray-900);
+    font-weight: 300;
+    color: var(--ar-gray-700);
   }
   .col-form-label {
     padding-top: calc(0.825rem + var(--ar-border-width));

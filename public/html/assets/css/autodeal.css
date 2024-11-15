@@ -8,6 +8,10 @@ header a.navbar-brand span{
     letter-spacing: -0.8px;
     font-weight: 700;
 }
+.helogreen{
+    font-weight: 400;
+    color: #438c74;
+}
 .profileDesktop .my-1 .form-switch.mode-switch{
     padding: var(--ar-dropdown-item-padding-y) var(--ar-dropdown-item-padding-x);
     display: block;
@@ -20,9 +24,14 @@ button.btn-kategori{
     letter-spacing: -0.4px;
     font-size: 15px;
 }
-
+.jcontent-ctr{
+    justify-content: center;
+}
 .fQuick{
     font-family: 'Quicksand';
+}
+.fw-500{
+    font-weight: 500;
 }
 .py-6 {
     padding-top: 4rem;
@@ -582,9 +591,9 @@ a.itemProduct span{
 #modalOTP,
 #modalNewPass,
 #modalLaporkan{
-    background-color: rgba(0, 0, 0, 0.65);
-    -webkit-backdrop-filter: blur(8px) !important;
-    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.55);
+    -webkit-backdrop-filter: blur(4px) !important;
+    backdrop-filter: blur(4px);
 }
 #modalLogin .modal-dialog,
 #modalForgot .modal-dialog,
@@ -2122,7 +2131,8 @@ div.alert{
     padding: 4px 18px;
 }
 .akunInfo .checkwa label,
-.akunInfo label{
+.akunInfo label,
+label.form-label{
     font-size: 12px;
 }
 .akunInfo .checkwa input{
@@ -2692,4 +2702,10 @@ header.create_header .container a.btn-back i{
     padding: 0 0 !important;
     font-size: 13px;
     min-height: 65px;
+}
+
+/* package */
+.pilih-paket{
+    max-width: 640px !important;
+    margin-top: 40px !important;
 }
