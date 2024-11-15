@@ -417,13 +417,67 @@
 
           <!-- Header and footer -->
           <div class="card text-center pilih-paket bor-16">
-            <div class="card-header">Pilih kategori untuk membeli paket</div>
-            <div class="card-body">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-header">
+              Pilih kategori untuk membeli paket
+              <div class="alert alert-info" role="alert">
+                <i class="bi bi-info-circle me-2"></i>
+                <div>Paketmu hanya berlaku di lokasi dan kategori yang dipilih.</div>
+              </div>
             </div>
-            <div class="card-footer fs-sm text-body-secondary">3 days ago</div>
+            <div class="card-body">
+              <!-- <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <div class="col-sm-12 txt-l mb-20">
+                <label class="form-label" for="category-package">Kategori<span>*</span></label>
+                <select class="form-select" id="category-package">
+                  <option value="" selected disabled>Pilih kategori</option>
+                  <option value="Properti">Properti</option>
+                  <option value="Mobil">Mobil</option>
+                  <option value="Motor">Motor</option>
+                  <option value="Gadget">Gadget</option>
+                  <option value="Elektronik">Elektronik</option>
+                  <option value="Olahraga">Olahraga</option>
+                  <option value="Peliharaan">Peliharaan</option>
+                  <option value="Hobi">Hobi</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Perabotan">Perabotan</option>
+                  <option value="Pekerjaan">Pekerjaan</option>
+                  <option value="Bayipedia">Bayipedia</option>
+                  <option value="Perkantoran">Perkantoran</option>
+                </select>
+              </div>
+              <div class="col-sm-12 txt-l mb-20">
+                <label class="form-label" for="subcategory-package">Sub kategori<span>*</span></label>
+                <select class="form-select" id="subcategory-package">
+                  <option value="" selected disabled>Pilih Sub kategori</option>
+                </select>
+              </div>
+              <div class="col-sm-12 txt-l">
+                <section class="searchBox">
+                  <label class="form-label" for="location-package">Lokasi<span>*</span></label>
+                  <div class="loc_frame">
+                    <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                    <i class="bi bi-map"></i>
+                    <select class="locationBox" name="location-package">
+                      <option value="" disabled selected>Indonesia</option>
+                      <option value="DKI Jakarta">DKI Jakarta</option>
+                      <option value="Jawa Barat">Jawa Barat</option>
+                      <option value="Jawa Tengah">Jawa Tengah</option>
+                      <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                      <option value="Sumatra">Sumatra</option>
+                      <option value="Kalimantan">Kalimantan</option>
+                    </select>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="card-footer fs-sm text-body-secondary">
+              <!-- <div class="col-12 d-flex justify-content-end pt-3"> -->
+                <!-- <button class="btn btn-secondary mx-h-44" type="button">Cancel</button> -->
+                <button class="btn btn-primary ms-2 mx-h-44" type="button">Lihat Paket</button>
+              <!-- </div> -->
+            </div>
           </div>
 
         </div>

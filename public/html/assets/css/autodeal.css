@@ -2124,7 +2124,8 @@ div.alert{
     height: 72px;
 }
 .akunInfo label span,
-.akunInfo .verifEmail span{
+.akunInfo .verifEmail span,
+.pilih-paket .card-body label span{
     color: #FF5B5B;
 }
 .akunInfo .verifEmail{
@@ -2134,6 +2135,7 @@ div.alert{
 .akunInfo label,
 label.form-label{
     font-size: 12px;
+    font-weight: 400;
 }
 .akunInfo .checkwa input{
     width: 16px;
@@ -2706,6 +2708,23 @@ header.create_header .container a.btn-back i{
 
 /* package */
 .pilih-paket{
-    max-width: 640px !important;
+    max-width: 500px !important;
     margin-top: 40px !important;
+}
+.pilih-paket section.searchBox .loc_frame {
+    width: 100%;
+}
+.pilih-paket .alert-info{
+    font-size: 12px;
+    border-radius: 6px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.pilih-paket .alert-info div{
+    align-content: center;
 }
