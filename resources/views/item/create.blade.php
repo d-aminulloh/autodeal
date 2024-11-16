@@ -104,7 +104,7 @@
                       <span>
                         <img src="/assets/icons/add-img.svg" class="ico-add"/>
                       </span>
-                      <input type="file" id="imageUpload" name="imageUpload[]" class="image-upload-input" multiple required accept="image/jpeg,image/png,image/jpg" max="2097152">
+                      <input type="file" id="imageUpload" name="imageUpload[]" class="image-upload-input" multiple required accept="image/jpeg,image/png,image/jpg,image/webp" max="2097152">
                     </div>
                   </label>
                 </div>

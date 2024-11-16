@@ -717,10 +717,10 @@ class ApiAdsController extends Controller
       $cat_id = $input['category_id'];
       if($cat_id == '204'){
         if(isset($input['year'])) $quick_specification .= $input['year'].";";
-        if(isset($input['mileage'])) $quick_specification .= $input['mileage']." CC;";
+        if(isset($input['engine_capacity'])) $quick_specification .= $input['engine_capacity']." CC;";
       } else if($cat_id == '304'){
         if(isset($input['year'])) $quick_specification .= $input['year'].";";
-        if(isset($input['mileage'])) $quick_specification .= $input['mileage']." CC;";
+        if(isset($input['engine_capacity'])) $quick_specification .= $input['engine_capacity']." CC;";
       } else if(in_array($cat_id, ['403','404','405','406'])){
         if(isset($input['ram'])) $quick_specification .= $input['ram']." GB RAM;";
         if(isset($input['storage'])) $quick_specification .= $input['storage']." GB Storage;";
@@ -798,7 +798,7 @@ class ApiAdsController extends Controller
     public function imageUpload(Request $request)
     {
       $validator = Validator::make($request->all(), [
-        'file' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        'file' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
       ]);
       if ($validator->fails()) return ResponseService::notSuccess($validator->messages());
 
