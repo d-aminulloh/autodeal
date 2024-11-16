@@ -634,6 +634,9 @@
       padding: 6.3px 20.3px;
       max-width: 120px;
     }
+    .pilih-paket{
+      display: contents !important;
+    }
       
   }
   
