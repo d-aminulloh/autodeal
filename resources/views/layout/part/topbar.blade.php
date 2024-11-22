@@ -56,7 +56,7 @@
           <div class="row settingProfile">
             <div class="col">
               <a href="{{ route('myprofile') }}">
-                <i class="bi bi-person-circle"></i>
+                <i class="bi bi-person"></i>
                 <span>Profile</span>
               </a>
             </div>
@@ -169,7 +169,7 @@
               <div class="row settingProfile">
                 <div class="col">
                   <a href="{{ route('myprofile') }}">
-                    <i class="bi bi-person-circle"></i>
+                    <i class="bi bi-person"></i>
                     <span>Profile</span>
                   </a>
                 </div>
