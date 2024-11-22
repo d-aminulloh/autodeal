@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    
+    <!-- SEO meta tags -->
+    <title>Autodeal | Paket</title>
+    <meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
+    <meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+    <meta name="author" content="Autodeal">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="icon" type="image/png" href="../assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/app-icons/icon-180x180.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="../assets/js/theme-switcher.js"></script>
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <!-- Theme styles + Bootstrap + select2-->
+    <link rel="stylesheet" media="screen" href="../assets/css/autodeal.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/responsive.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="../assets/img/logo-autodeal.svg"/>
+            </span>
+            <span class="d-sm-inline">Autodeal.id</span>
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+          <div class="nav-menu menuMobile">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="../assets/img/logo-autodeal.svg"/>
+              </span>
+              <span class="d-sm-inline">Autodeal.id</span>
+            </a>
+
+            <div class="mobileLogin_modal login_yes">
+              <!-- Profile Login -->
+              <div class="profileMobile">
+                <img src="../assets/icons/person.svg" class="photoProfile_default"/>
+                <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
+                <!-- ganti foto user setelah login -->
+                <div class="nameProfile name_default">
+                  <span>Halo,</span>
+                  <span>Kamu belum login 😢</span> 
+                </div>
+                <div class="nameProfile name_real">
+                  <span>Halo,</span>
+                  <span>John Doe</span> 
+                </div>
+              </div>
+
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Setting -->
+              <div class="row settingProfile">
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-person"></i>
+                    <span>Profil</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-gear"></i>
+                    <span>Pengaturan</span>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Bantuan</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Theme switcher - Mobile -->
+            <div class="form-check form-switch mode-switch modeSwitch-mobile order-lg-3" data-bs-toggle="mode">
+              <span>Mode tema</span>
+              <div class="toggleSwitch">
+                <input class="form-check-input" type="checkbox" id="theme-mode">
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-brightness-low"></i>
+                </label>
+                <label class="form-check-label" for="theme-mode">
+                  <i class="bi bi-moon-stars" style="font-size: 11px;"></i>
+                </label>
+              </div>
+            </div>
+
+            <ul class="kategoriMobile">
+              <li><a href="#"><img src="../assets/icons/category/properti.png"/>Properti</a></li>
+              <li><a href="#"><img src="../assets/icons/category/mobil.png"/>Mobil</a></li>
+              <li><a href="#"><img src="../assets/icons/category/motor.png"/>Motor</a></li>
+              <li><a href="#"><img src="../assets/icons/category/gadget.png"/>Gadget</a></li>
+              <li><a href="#"><img src="../assets/icons/category/elektronik.png"/>Elektronik</a></li>
+              <li><a href="#"><img src="../assets/icons/category/olahraga.png"/>Olahraga</a></li>
+              <li><a href="#"><img src="../assets/icons/category/peliharaan.png"/>Peliharaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/hobi.png"/>Hobi</a></li>
+              <li><a href="#"><img src="../assets/icons/category/fashion.png"/>Fashion</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perabotan.png"/>Perabotan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/pekerjaan.png"/>Pekerjaan</a></li>
+              <li><a href="#"><img src="../assets/icons/category/bayipedia.png"/>Bayipedia</a></li>
+              <li><a href="#"><img src="../assets/icons/category/perkantoran.png"/>Perkantoran</a></li>
+            </ul>
+          </div>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <section class="searchBox bg-light">
+              <div class="container">
+                <div class="loc_frame">
+                  <!-- <img src="assets/icons/location.svg" class="img-location"/> -->
+                  <i class="bi bi-map"></i>
+                  <select class="locationBox" name="state">
+                    <option value="" disabled selected>Indonesia</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                    <option value="Sumatra">Sumatra</option>
+                    <option value="Kalimantan">Kalimantan</option>
+                  </select>
+                </div>
+                <div class="search_frame">
+                  <input type="text" id="input_search" placeholder="Cari disini ..." autocomplete="on">
+                  <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+                <div class="result_box">
+                </div>
+              </div>
+            </section>
+          </nav>
+
+          <!-- Search + Account + Cart -->
+          <div class="nav align-items-center order-lg-2 ms-n1 me-sm-0 akunMobile">
+            <!-- profile before login -->
+            <!-- <a class="nav-link fs-7 p-2 mx-sm-1 d-sm-flex" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+              <i class="bi bi-person"></i>
+              Login / Daftar
+            </a> -->
+
+            <!-- profile after login -->
+            <div class="profileDesktop">
+              
+              <div class="btn-group dropdown">
+                <button type="button" class="btn btn-outline-secondary btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../assets/img/person/woman.jpg" class="photoProfile_real"/>
+                  <div class="d-none d-sm-block ps-2 mt-6">
+                    <div class="fs-xs lh-1 txt-l helogreen">Hello,</div>
+                    <div class="fs-sm dropdown-toggle fw-500">Isabella</div>
+                  </div>
+                </button>
+                <div class="dropdown-menu my-1">
+                  <!-- Theme switcher - Desktop -->
+                  <div class="form-check form-switch mode-switch order-lg-3" data-bs-toggle="mode">
+                    <!-- <div class="toggleSwitch"> -->
+                      <i class="bi bi-sun-fill"></i>
+                      <label>Tema</label>
+                      <input class="form-check-input" type="checkbox" id="theme-mode">
+                    <!-- </div> -->
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Akun</h6> -->
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-person"></i>
+                    Profil
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-view-list"></i>
+                    Iklan Saya
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-credit-card"></i>
+                    Paket Saya
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Dashboard</h6> -->
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-gear"></i>
+                    Pengaturan
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-question-circle"></i>
+                    Bantuan
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">
+                    <i class="bi bi-box-arrow-right"></i>
+                    Keluar
+                  </a>
+                </div>
+              </div>
+              <div class="separator-menu">|</div>
+              <!-- chat, notif, favourite, signout -->
+              <div class="chatNotif">
+                <a href="#">
+                  <i class="bi bi-chat-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-heart-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- slider menu -->
+      <div class="menuSlider">
+
+        <section class="position-relative">
+          <!-- Swiper slider -->
+          <div class="container position-relative z-2">
+            <div class="swiper" data-swiper-options='{
+              "slidesPerView": "auto",
+              "spaceBetween": 8,
+              "loop": false,
+              "navigation": {
+                "prevEl": ".prev-gallery",
+                "nextEl": ".next-gallery"
+              }
+            }'>
+              <div class="swiper-wrapper align-items-end swiperMenu">
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/properti.png" class="iconKategori-menu"/>
+                    Properti
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/mobil.png" class="iconKategori-menu"/>
+                    Mobil
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/motor.png" class="iconKategori-menu"/>
+                    Motor
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/gadget.png" class="iconKategori-menu"/>
+                    Gadget
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/elektronik.png" class="iconKategori-menu"/>
+                    Elektronik
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/olahraga.png" class="iconKategori-menu"/>
+                    Olahraga
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/peliharaan.png" class="iconKategori-menu"/>
+                    Peliharaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/hobi.png" class="iconKategori-menu"/>
+                    Hobi
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/fashion.png" class="iconKategori-menu"/>
+                    Fashion
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perabotan.png" class="iconKategori-menu"/>
+                    Perabotan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/pekerjaan.png" class="iconKategori-menu"/>
+                    Pekerjaan
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/bayipedia.png" class="iconKategori-menu"/>
+                    Bayipedia
+                  </a>
+                </div>
+  
+                <!-- Item -->
+                <div class="swiper-slide w-auto">
+                  <a class="d-block card-hover zoom-effect" href="#">
+                    <img src="../assets/icons/category/perkantoran.png" class="iconKategori-menu"/>
+                    Perkantoran
+                  </a>
+                </div>
+  
+              </div>
+            </div>
+            <!-- Swiper controls (Prev/next buttons) visible on screens > 576px -->
+            <div class="d-none d-sm-flex navMenu bg-light">
+              <button class="prev-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Prev">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="next-gallery btn btn-icon btn-outline-primary rounded-circle" type="button" aria-label="Next">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+      <!-- Page container -->
+      <div class="container py-5 mt-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="bc_breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" aria-label="Home"><i class="bi bi-house-fill"></i></a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Paket</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Daftar Paket</li>
+          </ol>
+        </nav>
+        <!-- Carousel -->
+         <!-- Pagination: Bullets -->
+        <div class="swiper swiper-nav-onhover banner-package" data-swiper-options='{
+          "spaceBetween": 20,
+          "loop": true,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "navigation": {
+            "prevEl": ".btn-prev",
+            "nextEl": ".btn-next"
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="ratio ratio-20 bg-secondary">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="ratio ratio-20 bg-secondary">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide">
+              <div class="ratio ratio-20 bg-secondary">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prev button -->
+          <button type="button" class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle" aria-label="Prev">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+
+          <!-- Next button -->
+          <button type="button" class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle" aria-label="Next">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+
+          <!-- Bullets -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- List Package -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a href="#kuota" class="nav-link active" data-bs-toggle="tab" role="tab">
+              <i class="bi bi-pie-chart-fill mr-8"></i>
+              Kuota
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#premium" class="nav-link" data-bs-toggle="tab" role="tab">
+              <i class="bi bi-lightning-charge-fill mr-8"></i>
+              Premium
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sundul" class="nav-link" data-bs-toggle="tab" role="tab">
+              <!-- <i class="bi bi-rocket-takeoff mr-8"></i> -->
+              <i class="bi bi-rocket-takeoff-fill mr-8"></i>
+              Sundul
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#partner" class="nav-link" data-bs-toggle="tab" role="tab">
+              <i class="bi bi-pin-angle-fill mr-8"></i>
+              Partner
+            </a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Dropdown</a>
+            <div class="dropdown-menu">
+              <a href="#messages" class="dropdown-item" data-bs-toggle="tab" role="tab">Messages</a>
+              <a href="#settings" class="dropdown-item" data-bs-toggle="tab" role="tab">Settings</a>
+            </div>
+          </li> -->
+        </ul>
+
+        <!-- Tabs content -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="kuota" role="tabpanel">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+              <!-- list -->
+              <div class="col pb-2 pb-sm-3">
+                <!-- Horizontal pricing plan card (List view) -->
+                <div class="card border-0 bg-secondary rounded-4 position-relative mb-3">
+                  <div class="card-body d-sm-flex align-items-start text-center text-sm-start">
+                    <div class="w-100 pe-sm-4 mb-3 mb-sm-0" style="max-width: 27rem;">
+                      <h3 class="mb-2">4 lessons</h3>
+                      <p class="fs-lg mb-0">Valid for all types of classes</p>
+                    </div>
+                    <div class="w-100 pe-sm-3 mx-auto me-sm-0 mb-3 mb-sm-0" style="max-width: 8rem;">
+                      <div class="h3 text-primary mb-0 mb-sm-2">$40</div>
+                      <span class="fs-sm">$10 per class</span>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-primary stretched-link w-100 w-sm-auto">
+                      Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- list -->
+              <div class="col pb-2 pb-sm-3">
+                <!-- Horizontal pricing plan card (List view) -->
+                <div class="card border-0 bg-secondary rounded-4 position-relative mb-3">
+                  <div class="card-body d-sm-flex align-items-start text-center text-sm-start">
+                    <div class="w-100 pe-sm-4 mb-3 mb-sm-0" style="max-width: 27rem;">
+                      <h3 class="mb-2">4 lessons</h3>
+                      <p class="fs-lg mb-0">Valid for all types of classes</p>
+                    </div>
+                    <div class="w-100 pe-sm-3 mx-auto me-sm-0 mb-3 mb-sm-0" style="max-width: 8rem;">
+                      <div class="h3 text-primary mb-0 mb-sm-2">$40</div>
+                      <span class="fs-sm">$10 per class</span>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-primary stretched-link w-100 w-sm-auto">
+                      Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- list -->
+              <div class="col pb-2 pb-sm-3">
+                <!-- Horizontal pricing plan card (List view) -->
+                <div class="card border-0 bg-secondary rounded-4 position-relative mb-3">
+                  <div class="card-body d-sm-flex align-items-start text-center text-sm-start">
+                    <div class="w-100 pe-sm-4 mb-3 mb-sm-0" style="max-width: 27rem;">
+                      <h3 class="mb-2">4 lessons</h3>
+                      <p class="fs-lg mb-0">Valid for all types of classes</p>
+                    </div>
+                    <div class="w-100 pe-sm-3 mx-auto me-sm-0 mb-3 mb-sm-0" style="max-width: 8rem;">
+                      <div class="h3 text-primary mb-0 mb-sm-2">$40</div>
+                      <span class="fs-sm">$10 per class</span>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-primary stretched-link w-100 w-sm-auto">
+                      Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- list -->
+              <div class="col pb-2 pb-sm-3">
+                <!-- Horizontal pricing plan card (List view) -->
+                <div class="card border-0 bg-secondary rounded-4 position-relative mb-3">
+                  <div class="card-body d-sm-flex align-items-start text-center text-sm-start">
+                    <div class="w-100 pe-sm-4 mb-3 mb-sm-0" style="max-width: 27rem;">
+                      <h3 class="mb-2">4 lessons</h3>
+                      <p class="fs-lg mb-0">Valid for all types of classes</p>
+                    </div>
+                    <div class="w-100 pe-sm-3 mx-auto me-sm-0 mb-3 mb-sm-0" style="max-width: 8rem;">
+                      <div class="h3 text-primary mb-0 mb-sm-2">$40</div>
+                      <span class="fs-sm">$10 per class</span>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-primary stretched-link w-100 w-sm-auto">
+                      Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="premium" role="tabpanel">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+          </div>
+          <div class="tab-pane fade" id="sundul" role="tabpanel">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu.</p>
+          </div>
+          <div class="tab-pane fade" id="partner" role="tabpanel">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical.</p>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    
+    
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="../assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="../assets/js/theme.min.js"></script>
+
+    <!-- Customizer -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="../assets/js/autodeal.js"></script>
+    
+  </body>
+</html>
