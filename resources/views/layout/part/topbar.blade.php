@@ -142,7 +142,7 @@
         <div class="profileDesktop">
           
           <div class="btn-group dropdown">
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-outline-secondary btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?php
                 if($profile_image = Auth::user()->profile_image) {
                   echo "<img src='".env('PATH_USER').$profile_image."' class='photoProfile_real'/>";
@@ -150,48 +150,50 @@
                   echo "<i class='bi bi-person'></i>";
                 }
               ?>
+              <div class="d-none d-sm-block ps-2 mt-6">
+                <div class="fs-xs lh-1 txt-l helogreen">Hello,</div>
+                <div class="fs-sm dropdown-toggle fw-500" id="5b83214c8e50617707dad0bfc97f3abb">{{Auth::user()->name}}</div>
+              </div>
             </button>
             <div class="dropdown-menu my-1">
-              <div class="nameProfile name_real">
-                <span>Halo,</span>
-                <span id="5b83214c8e50617707dad0bfc97f3abb">{{Auth::user()->name}}</span> 
-              </div>
-              
               <!-- Theme switcher - Desktop -->
-              <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
+              <div class="form-check form-switch mode-switch order-lg-3" data-bs-toggle="mode">
                 <!-- <div class="toggleSwitch"> -->
-                  <input class="form-check-input" type="checkbox" id="theme-mode">
-                  <label>Mode tema</label>
+                <i class="bi bi-sun-fill"></i>
+                <label>Tema</label>
+                <input class="form-check-input" type="checkbox" id="theme-mode">
                 <!-- </div> -->
               </div>
-              <div class="hr_custom"></div>
-              <!-- Setting -->
-              <div class="row settingProfile">
-                <div class="col">
-                  <a href="{{ route('myprofile') }}">
-                    <i class="bi bi-person"></i>
-                    <span>Profile</span>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="{{ route('profile.setting') }}">
-                    <i class="bi bi-gear"></i>
-                    <span>Pengaturan</span>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="{{ route('help') }}">
-                    <i class="bi bi-question-circle"></i>
-                    <span>Bantuan</span>
-                  </a>
-                </div>
-                <div class="col">
-                  <a href="#" onclick="autodealDoLogout()">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <span>Keluar</span>
-                  </a>
-                </div>
-              </div>
+              <div class="dropdown-divider"></div>
+              <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Akun</h6> -->
+              <a href="{{ route('myprofile') }}" class="dropdown-item">
+                <i class="bi bi-person"></i>
+                Profil
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="bi bi-view-list"></i>
+                Iklan Saya
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="bi bi-credit-card"></i>
+                Paket Saya
+              </a>
+              <div class="dropdown-divider"></div>
+              <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Dashboard</h6> -->
+              <a href="{{ route('profile.setting') }}" class="dropdown-item">
+                <i class="bi bi-gear"></i>
+                Pengaturan
+              </a>
+              <a href="{{ route('help') }}" class="dropdown-item">
+                <i class="bi bi-question-circle"></i>
+                Bantuan
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item" onclick="autodealDoLogout()">
+                <i class="bi bi-box-arrow-right"></i>
+                Keluar
+              </a>
+
             </div>
           </div>
           <div class="separator-menu">|</div>
