@@ -6910,6 +6910,9 @@
   .ratio-21x9 {
     --ar-aspect-ratio: 42.8571428571%;
   }
+  .ratio-20 {
+    --ar-aspect-ratio: 18%;
+  }
   .fixed-top {
     position: fixed;
     top: 0;
@@ -15795,8 +15798,10 @@
   }
   .swiper-pagination-bullet {
     position: relative;
-    width: var(--ar-carousel-pagination-bullet-size);
-    height: var(--ar-carousel-pagination-bullet-size);
+    /* width: var(--ar-carousel-pagination-bullet-size);
+    height: var(--ar-carousel-pagination-bullet-size); */
+    width: 10px;
+    height: 10px;
     background-color: var(--ar-carousel-pagination-bullet-bg);
     border: var(--ar-carousel-pagination-bullet-border-width) solid
       var(--ar-carousel-pagination-bullet-border-color);
@@ -15813,13 +15818,13 @@
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 1.25rem;
+    bottom: 1rem;
   }
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-bullets.swiper-pagination-horizontal
     .swiper-pagination-bullet {
-    margin-right: calc(var(--ar-carousel-pagination-bullet-spacer) * 0.5);
-    margin-left: calc(var(--ar-carousel-pagination-bullet-spacer) * 0.5);
+    /* margin-right: calc(var(--ar-carousel-pagination-bullet-spacer) * 0.5);
+    margin-left: calc(var(--ar-carousel-pagination-bullet-spacer) * 0.5); */
   }
   .swiper-vertical > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-vertical {
