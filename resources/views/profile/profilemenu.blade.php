@@ -8,7 +8,7 @@
         <nav class="nav flex-column mb-3">
           <h4 class="fs-xs fw-medium text-body-secondary text-uppercase pb-1 mb-2">Akun</h4>
           <a class="nav-link fw-semibold py-2 px-0{{Route::getCurrentRoute()->getName() == 'myprofile' ? 'active':''}}" {{Route::getCurrentRoute()->getName() == "myprofile" ? '':'href='.route('myprofile').''}}>
-            <i class="bi bi-person-circle fs-6 opacity-60 me-2"></i>
+            <i class="bi bi-person fs-6 opacity-60 me-2"></i>
             Profil
             <i class="bi bi-chevron-right pos-absolute right-10"></i>
           </a>
