@@ -10,7 +10,7 @@
         <span class="text-primary flex-shrink-0 me-2">
           <img src="/assets/img/logo-autodeal.svg"/>
         </span>
-        <span class="d-sm-inline">Autodeal.id</span>
+        <!-- <span class="d-sm-inline">Autodeal.id</span> -->
       </a>
     </div>
   </div>

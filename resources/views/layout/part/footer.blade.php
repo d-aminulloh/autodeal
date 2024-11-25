@@ -13,7 +13,7 @@
                     <img src="/assets/img/logo-autodeal.svg"/>
                   </span>
               </span>
-              <span class="text-white opacity-90 fQuick">Autodeal.id</span>
+              <!-- <span class="text-white opacity-90 fQuick">Autodeal.id</span> -->
             </div>
             <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
             <!-- <div class="input-group input-group-sm rounded-pill">
@@ -75,7 +75,7 @@
           </div>
           <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
             <span class="text-body-secondary">&copy; 2023</span>
-            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
+            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">dealnesia.com</a>
           </p>
         </div>
       </div>
