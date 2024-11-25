@@ -74,6 +74,9 @@ button.btn-kategori{
 .bbmb-32{
     margin-bottom: 32px !important;
 }
+.mr-8{
+    margin-right: 8px;
+}
 .mr-12{
     margin-right: 12px;
 }
@@ -436,7 +439,7 @@ button.btn-kategori{
     font-size: 13px;
     font-family: 'Quicksand';
     font-weight: 600;
-    background-color: rgb(67 140 116 / 20%);
+    background-color: rgb(67 140 116 / 12%);
     padding: 8.25px 20px 8.25px 44px;
     border-radius: 8px;
 }
@@ -2727,4 +2730,9 @@ header.create_header .container a.btn-back i{
 }
 .pilih-paket .alert-info div{
     align-content: center;
+}
+.banner-package{
+    margin-top: 16px;
+    margin-bottom: 40px;
+    border-radius: 16px;
 }

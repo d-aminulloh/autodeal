@@ -637,6 +637,9 @@
     .pilih-paket{
       display: contents !important;
     }
+    .ratio-20 {
+      --ar-aspect-ratio: 36% !important;
+    }
       
   }
   
