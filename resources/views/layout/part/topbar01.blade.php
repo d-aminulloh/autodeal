@@ -8,7 +8,7 @@
       <!-- Navbar brand (Logo) -->
       <a class="navbar-brand" href="/">
         <span class="text-primary flex-shrink-0 me-2">
-          <img src="/assets/img/logo-autodeal.svg"/>
+          <img src="/assets/img/dealnesia-logo.svg"/>
         </span>
         <!-- <span class="d-sm-inline">Autodeal.id</span> -->
       </a>

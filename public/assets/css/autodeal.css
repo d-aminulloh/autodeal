@@ -149,7 +149,7 @@ section.rounded-1 h2{
 .menuSlider{
     display: block;
     position: fixed;
-    top: 56px;
+    top: 58px;
     min-height: 1px;
     width: 100%;
     padding-bottom: 9px;
@@ -427,7 +427,7 @@ button.btn-kategori{
     left: 16px;
 }
 .swiperMenu .swiper-slide {
-    /* background-color: rgb(67 140 116 / 20%);
+    /* background-color: rgb(67 140 116 / 12%);
     border-radius: 8px;
     padding: 9.5px 20px 9.5px 16px; */
     padding-top: 1px;
@@ -1223,7 +1223,7 @@ ul.kategoriMobile li a img{
     margin: 2px 0px;
 }
 .profileDesktop .dropdown-menu.my-1 a:hover{
-    background-color: rgb(67 140 116 / 20%);
+    background-color: rgb(67 140 116 / 12%);
 }
 .profileDesktop .dropdown-menu.my-1{
     padding: 14px 0px;
@@ -1430,7 +1430,7 @@ ul.ulLast a label span:nth-child(1){
     margin-right: 8px;
 }
 ul.ulLast li.active{
-    background-color: rgb(67 140 116 / 20%);
+    background-color: rgb(67 140 116 / 12%);
     border-radius: 4px;
     padding: 2px 4px 2px 8px;
 }
@@ -1570,7 +1570,7 @@ span.fs-base{
 } */
 .p3ver div{
     color: #438c74;
-    background-color: rgb(67 140 116 / 20%);
+    background-color: rgb(67 140 116 / 12%);
     border-radius: 8px;
     font-size: 18px;
     height: 42px;
@@ -2107,7 +2107,7 @@ li.breadcrumb-item.active {
     position: relative;
 }
 #sidebarAccount nav a.active{
-    background-color: rgb(67 140 116 / 20%);
+    background-color: rgb(67 140 116 / 12%);
 }
 .akunInfo table tr td{
     font-size: 14px;
@@ -2358,6 +2358,7 @@ header.create_header{
 }
 header.create_header .container a.btn-back{
     margin-right: 8px;
+    margin-top: 4px;
 }
 header.create_header .container a.btn-back i{
     font-size: 32px;
@@ -2441,9 +2442,12 @@ header.create_header .container a.btn-back i{
     padding-top: 5px;
 }
 .create_main .createIkl .itemFit_02 .itemFit_02-03 .row.col-md-8 .input-group textarea{
-    min-height: 96px;
+    min-height: 180px;
     height: 16px;
     padding-left: 0 !important;
+}
+.create_main .createIkl .itemFit_02 .itemFit_02-03 .row.col-md-8 .input-group textarea#address_detail{
+    min-height: 100px;
 }
 .create_main .createIkl .itemFit_02 .itemFit_02-03 .row.col-md-8 .input-group textarea.descikl{
     min-height: 150px;
@@ -2735,4 +2739,9 @@ header.create_header .container a.btn-back i{
     margin-top: 16px;
     margin-bottom: 40px;
     border-radius: 16px;
+}
+h6 span.txt-opsional {
+    font-weight: 500 !important;
+    color: #caa102 !important;
+    font-style: italic !important;
 }

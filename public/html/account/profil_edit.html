@@ -52,9 +52,9 @@
           <!-- Navbar brand (Logo) -->
           <a class="navbar-brand" href="index.html">
             <span class="text-primary flex-shrink-0 me-2">
-              <img src="../assets/img/dealnesia-logo.svg"/>
+              <img src="../assets/img/logo-autodeal.svg"/>
             </span>
-            <!-- <span class="d-sm-inline">Autodeal.id</span> -->
+            <span class="d-sm-inline">Autodeal.id</span>
           </a>
 
           <!-- Mobile menu toggler (Hamburger) -->
@@ -68,9 +68,9 @@
             <!-- Navbar brand (Logo) -->
             <a class="navbar-brand" href="index.html">
               <span class="text-primary flex-shrink-0 me-2">
-                <img src="../assets/img/dealnesia-logo.svg"/>
+                <img src="../assets/img/logo-autodeal.svg"/>
               </span>
-              <!-- <span class="d-sm-inline">Autodeal.id</span> -->
+              <span class="d-sm-inline">Autodeal.id</span>
             </a>
 
             <div class="mobileLogin_modal login_yes">
@@ -109,7 +109,7 @@
               <div class="row settingProfile">
                 <div class="col">
                   <a href="#">
-                    <i class="bi bi-person"></i>
+                    <i class="bi bi-person-circle"></i>
                     <span>Profil</span>
                   </a>
                 </div>
@@ -199,51 +199,50 @@
             <div class="profileDesktop">
               
               <div class="btn-group dropdown">
-                <button type="button" class="btn btn-outline-secondary btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="../assets/img/person/woman.jpg" class="photoProfile_real"/>
-                  <div class="d-none d-sm-block ps-2 mt-6">
-                    <div class="fs-xs lh-1 txt-l helogreen">Hello,</div>
-                    <div class="fs-sm dropdown-toggle fw-500">Isabella</div>
-                  </div>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle btnProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../assets/img/person/man.jpg" class="photoProfile_real"/>
                 </button>
                 <div class="dropdown-menu my-1">
+                  <div class="nameProfile name_real">
+                    <span>Halo,</span>
+                    <span>John Doe</span> 
+                  </div>
+                  
                   <!-- Theme switcher - Desktop -->
-                  <div class="form-check form-switch mode-switch order-lg-3" data-bs-toggle="mode">
+                  <div class="form-check form-switch mode-switch modeSwitch-desktop order-lg-3" data-bs-toggle="mode">
                     <!-- <div class="toggleSwitch"> -->
-                      <i class="bi bi-sun-fill"></i>
-                      <label>Tema</label>
                       <input class="form-check-input" type="checkbox" id="theme-mode">
+                      <label>Mode tema</label>
                     <!-- </div> -->
                   </div>
-                  <div class="dropdown-divider"></div>
-                  <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Akun</h6> -->
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-person"></i>
-                    Profil
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-view-list"></i>
-                    Iklan Saya
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-credit-card"></i>
-                    Paket Saya
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <!-- <h6 class="dropdown-header fs-xs fw-medium text-body-secondary text-uppercase pb-1">Dashboard</h6> -->
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-gear"></i>
-                    Pengaturan
-                  </a>
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-question-circle"></i>
-                    Bantuan
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item">
-                    <i class="bi bi-box-arrow-right"></i>
-                    Keluar
-                  </a>
+                  <div class="hr_custom"></div>
+                  <!-- Setting -->
+                  <div class="row settingProfile">
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Profil</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span>Pengaturan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Bantuan</span>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Keluar</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="separator-menu">|</div>
@@ -425,7 +424,7 @@
                   <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
                     <h4 class="fs-xs fw-medium text-body-secondary text-uppercase pb-1 mb-2">Akun</h4>
                     <a class="nav-link fw-semibold py-2 px-0 active" href="profil.html">
-                      <i class="bi bi-person fs-6 opacity-60 me-2"></i>
+                      <i class="bi bi-person-circle fs-6 opacity-60 me-2"></i>
                       Profil
                       <i class="bi bi-chevron-right pos-absolute right-10"></i>
                     </a>
@@ -553,44 +552,51 @@
                   <h4 class="fs-xs fw-medium text-body-secondary text-uppercase mb-0">Alamat</h4>
 
                   <div class="col-sm-6">
-                    <label class="form-label" for="province">Propinsi<span>*</span></label>
-                    <select class="form-select" id="province">
+                    <label class="form-label" for="country">Propinsi<span>*</span></label>
+                    <select class="form-select" id="country">
                       <option value="" selected disabled>Pilih propinsi</option>
-                      <option value="DKI Jakarta">DKI Jakarta</option>
-                      <option value="Jawa Barat">Jawa Barat</option>
-                      <option value="Jawa Tengah">Jawa Tengah</option>
-                      <option value="Banten">Banten</option>
-                      <option value="D.I Yogyakarta">D.I Yogyakarta</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="USA">USA</option>
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label class="form-label" for="city">Kabupaten / Kota<span>*</span></label>
-                    <select class="form-select" id="city">
+                    <label class="form-label" for="language">Kabupaten / Kota<span>*</span></label>
+                    <select class="form-select" id="language">
                       <option value="" selected disabled>Pilih kabupaten / kota</option>
-                      <option value="Jakarta Selatan">Jakarta Selatan</option>
-                      <option value="Jakarta Pusat">Jakarta Pusat</option>
-                      <option value="Jakarta Utara">Jakarta Utara</option>
-                      <option value="Jakarta Timur">Jakarta Timur</option>
+                      <option value="English">English</option>
+                      <option value="Français">Français</option>
+                      <option value="Deutsch">Deutsch</option>
+                      <option value="Italiano">Italiano</option>
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label class="form-label" for="district">Kecamatan<span>*</span></label>
-                    <select class="form-select" id="district">
+                    <label class="form-label" for="timezone">Kecamatan<span>*</span></label>
+                    <select class="form-select" id="timezone">
                       <option value="" selected disabled>Pilih kecamatan</option>
-                      <option value="Cempaka Putih">Cempaka Putih</option>
-                      <option value="Tanah Abang">Tanah Abang</option>
-                      <option value="Kemayoran">Kemayoran</option>
-                      <option value="Menteng">Menteng</option>
-                      <option value="Gambir">Gambir</option>
-                      <option value="Senen">Senen</option>
+                      <option value="AST">Atlantic Standard Time (AST)</option>
+                      <option value="EST">Eastern Standard Time (EST)</option>
+                      <option value="CST">Central Standard Time (CST)</option>
+                      <option value="MST">Mountain Standard Time (MST)</option>
+                      <option value="PST">Pacific Standard Time (PST)</option>
+                      <option value="AKST">Alaskan Standard Time (AKST)</option>
+                      <option value="HST">Hawaii-Aleutian Standard Time (HST)</option>
                     </select>
                   </div>
                   <div class="col-sm-6">
-                    <label class="form-label" for="postal">Kode Pos</label>
-                    <input class="form-control" type="text" placeholder="10120" id="postal">
+                    <label class="form-label" for="currency">Kode Pos<span>*</span></label>
+                    <select class="form-select" id="currency">
+                      <option value="" selected disabled>Pilih kode pos</option>
+                      <option value="usd">$ USD</option>
+                      <option value="eur">€ EUR</option>
+                      <option value="ukp">£ UKP</option>
+                      <option value="jpy">¥ JPY</option>
+                    </select>
                   </div>
                   <div class="col-12">
-                    <label class="form-label" for="det-address">Detail Alamat</label>
+                    <label class="form-label" for="bio">Detail Alamat</label>
                     <textarea class="form-control" rows="5" placeholder="Tulis alamatmu disini..."></textarea>
                   </div>
                   
@@ -621,10 +627,10 @@
                 <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
                   <span class="text-primary flex-shrink-0">
                       <span class="text-primary flex-shrink-0 me-2">
-                        <img src="../assets/img/dealnesia-logo.svg"/>
+                        <img src="../assets/img/logo-autodeal.svg"/>
                       </span>
                   </span>
-                  <!-- <span class="text-white opacity-90 fQuick">Autodeal.id</span> -->
+                  <span class="text-white opacity-90 fQuick">Autodeal.id</span>
                 </div>
                 <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
                 <!-- <div class="input-group input-group-sm rounded-pill">
@@ -686,7 +692,7 @@
               </div>
               <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
                 <span class="text-body-secondary">&copy; 2023</span>
-                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">dealnesia.com</a>
+                <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Autodeal.id</a>
               </p>
             </div>
           </div>

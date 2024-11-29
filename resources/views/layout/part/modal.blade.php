@@ -89,7 +89,7 @@
             <span class="validasiLogin">
               Dengan mendaftar, Anda setuju dengan 
               <a href="#">Syarat & ketentuan</a> serta <a href="#">Kebijakan privasi</a>
-              dari Autodeal
+              dari Dealnesia
             </span>
           </div>
         </form>

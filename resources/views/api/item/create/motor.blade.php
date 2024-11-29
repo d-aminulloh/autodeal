@@ -1,7 +1,7 @@
 <!-- Mobil detail -->
 <div class='itemFit_02'>
   <div class='itemFit_02-01'>
-    <label>MOBIL</label>
+    <label>MOTOR</label>
     <hr>
   </div>
   <div class='row itemFit_02-03'>

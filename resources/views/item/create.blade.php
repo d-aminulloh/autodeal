@@ -250,7 +250,7 @@
         <!-- button batal & simpan -->
         <div class="itemFit_02 txt-r">
           <button type="button" class="btn btn-secondary">Batal</button>
-          <button type="button" id="btn_submit" class="btn btn-primary">Simpan</button>
+          <button type="button" id="btn_submit" class="btn btn-primary">Pasang</button>
         </div>
 
 

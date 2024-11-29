@@ -25,7 +25,7 @@
         <nav class="nav flex-column mb-1">
           <h4 class="fs-xs fw-medium text-body-secondary text-uppercase pb-1 mb-2">Iklan</h4>
           <a class="nav-link fw-semibold py-2 px-0 {{Route::getCurrentRoute()->getName() == 'myitem' ? 'active':''}}" {{Route::getCurrentRoute()->getName() == "myitem" ? '':'href='.route('myitem').''}}>
-            <i class="bi bi-ui-checks-grid fs-6 opacity-60 me-2"></i>
+            <i class="bi bi-view-list fs-6 opacity-60 me-2"></i>
             Iklan saya
             <i class="bi bi-chevron-right pos-absolute right-10"></i>
           </a>

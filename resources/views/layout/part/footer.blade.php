@@ -10,12 +10,12 @@
             <div class="navbar-brand text-light py-0 me-0 pb-1 mb-3">
               <span class="text-primary flex-shrink-0">
                   <span class="text-primary flex-shrink-0 me-2">
-                    <img src="/assets/img/logo-autodeal.svg"/>
+                    <img src="/assets/img/dealnesia-logo.svg"/>
                   </span>
               </span>
               <!-- <span class="text-white opacity-90 fQuick">Autodeal.id</span> -->
             </div>
-            <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Autodeal, Pasti Deal!</p>
+            <p class="text-body fs-sm mb-4">Temukan Kemudahan Jual Beli yang Aman, Cepat, dan Terpercaya di Dealnesia, Pasti Deal!</p>
             <!-- <div class="input-group input-group-sm rounded-pill">
               <input class="form-control" type="text" placeholder="Email address">
               <button class="btn btn-primary rounded-pill" type="button">Subscribe</button>
@@ -56,7 +56,7 @@
             <h6 class="fw-bold">Contact us</h6>
             <ul class="nav flex-column fs-sm">
               <li class="nav-item">
-                <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@autodeal.id</a>
+                <a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com">info@dealnesia.com</a>
               </li>
             </ul>
           </div>
@@ -75,7 +75,7 @@
           </div>
           <p class="nav fs-sm order-sm-1 text-center text-sm-start pt-4 pt-sm-0 mb-0 me-4">
             <span class="text-body-secondary">&copy; 2023</span>
-            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">dealnesia.com</a>
+            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener">Dealnesia.com</a>
           </p>
         </div>
       </div>

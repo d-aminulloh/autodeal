@@ -4,7 +4,7 @@
     <!-- Navbar brand (Logo) -->
     <a class="navbar-brand" href="<?php echo env("APP_URL"); ?>">
       <span class="text-primary flex-shrink-0 me-2">
-        <img src="/assets/img/logo-autodeal.svg"/>
+        <img src="/assets/img/dealnesia-logo.svg"/>
       </span>
       <!-- <span class="d-sm-inline">Autodeal.id</span> -->
     </a>
@@ -20,7 +20,7 @@
       <!-- Navbar brand (Logo) -->
       <a class="navbar-brand" href="index.html">
         <span class="text-primary flex-shrink-0 me-2">
-          <img src="/assets/img/logo-autodeal.svg"/>
+          <img src="/assets/img/dealnesia-logo.svg"/>
         </span>
         <!-- <span class="d-sm-inline">Autodeal.id</span> -->
       </a>
@@ -56,7 +56,7 @@
           <div class="row settingProfile">
             <div class="col">
               <a href="{{ route('myprofile') }}">
-                <i class="bi bi-person"></i>
+                <i class="bi bi-person-circle"></i>
                 <span>Profile</span>
               </a>
             </div>

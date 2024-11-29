@@ -34,7 +34,7 @@
     </div>
     <!-- input 2 -->
     <div class="col-sm-6 col-md-4">
-      <h6>RAM & Penyimpanan</h6>
+      <h6>RAM & Penyimpanan <span class="txt-opsional">(Opsional)</span></h6>
       <label>Pilih RAM dan kapasitas penyimpanan yang sesuai dengan produkmu</label>
     </div>
     <div class="row col-sm-6 col-md-8">
@@ -47,7 +47,7 @@
     </div>
     <!-- input 3 -->
     <div class="col-sm-6 col-md-4">
-      <h6>Tahun</h6>
+      <h6>Tahun <span class="txt-opsional">(Opsional)</span></h6>
       <label>Pilih tahun produksi produkmu</label>
     </div>
     <div class="row col-sm-6 col-md-8">

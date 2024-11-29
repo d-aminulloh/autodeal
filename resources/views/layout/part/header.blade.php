@@ -4,9 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
 
 <!-- SEO meta tags -->
-<title>Autodeal</title>
-<meta name="description" content="Autodeal - Lapak Jual Beli Online Pasti Deal">
-<meta name="keywords" content="autodeal, auto, deal, jual, beli, lapak, online, pasti deal">
+<title>Dealnesia</title>
+<meta name="description" content="Dealnesia - Lapak Jual Beli Online Pasti Deal">
+<meta name="keywords" content="dealnesia, auto, deal, jual, beli, lapak, online, pasti deal">
 <meta name="author" content="Autodeal">
 
 <meta name="csrf_token" content="{{ csrf_token() }}" />

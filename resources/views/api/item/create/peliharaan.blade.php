@@ -7,7 +7,7 @@
   <div class="row itemFit_02-03">
     <!-- input 1 -->
     <div class="col-sm-6 col-md-4">
-      <h6>Umur & Jenis Kelamin</h6>
+      <h6>Umur & Jenis Kelamin <span class="txt-opsional">(Opsional)</span></h6>
       <label>Masukkan umur dan pilih jenis kelamin untuk memudahkan pencarian</label>
     </div>
     <div class="row col-sm-6 col-md-8">

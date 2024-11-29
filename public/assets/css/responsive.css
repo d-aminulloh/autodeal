@@ -170,8 +170,8 @@
       padding: 2px 0 !important;
     }
     .navbar-brand img{
-      width: 28px;
-      height: 28px;
+      /* width: 28px; */
+      height: 36px;
       padding: 2px 0;
     }
     header.navbar{
