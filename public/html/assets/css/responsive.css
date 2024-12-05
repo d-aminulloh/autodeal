@@ -332,11 +332,19 @@
     .akunMobile a{
       padding: 1px 1px 0 !important;
       margin-right: 12px;
-      font-size: 16px !important;
+      font-size: 14px !important;
+      display: none;
     }
     .akunMobile i.bi-person {
       font-size: 18px;
       margin: 1px 8px 0 0;
+    }
+    a.navonmenu{
+      display: block;
+      color: #49b18e;
+      font-weight: 400;
+      padding-left: 0 !important;
+      text-decoration: underline;
     }
     img.iconNew{
       width: 22px;

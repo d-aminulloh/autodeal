@@ -32,7 +32,12 @@
             <img src="/assets/icons/person.svg" class="photoProfile_default"/>
             <div class="nameProfile name_default">
               <span>Halo,</span>
-              <span>Kamu belum login 😢</span> 
+              <span>Kamu belum 
+                <a class="nav-link fs-7 mx-sm-1 d-sm-flex ptlog-12i td-uni navonmenu" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" aria-label="Account">
+                  Login / Daftar
+                </a> 
+                😢
+              </span>
             </div>
           @else
             <?php
